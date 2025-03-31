@@ -1,0 +1,40 @@
+@import '~low-code-react/lib/variables.less';
+
+.view-port-wigdet {
+  .view-tabs {
+    &.@{low-code-ant-prefix}-tabs-top > .@{low-code-ant-prefix}-tabs-nav {
+      margin-bottom: 8px;
+    }
+
+    & > .@{low-code-ant-prefix}-tabs-nav {
+      &::before {
+        display: none;
+      }
+
+      .@{low-code-ant-prefix}-tabs-nav-list > .@{low-code-ant-prefix}-tabs-tab {
+        border: none;
+        border-radius: 0;
+        padding: 0 10px;
+        margin: 0 8px 0 0 !important;
+      }
+
+      .@{low-code-ant-prefix}-tabs-nav-list
+        > .@{low-code-ant-prefix}-tabs-nav-add {
+        border: none;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+        min-width: 28px;
+      }
+    }
+
+    & .@{low-code-ant-prefix}-formily-item{
+      margin-bottom: 0px;
+    }
+
+    & > .@{low-code-ant-prefix}-tabs-content-holder {
+      box-shadow: 0px 2px 12px 0px rgba(51, 51, 51, 0.2);
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import '../../variables.less';
+
+.@{prefix-cls}-local-layout {
+  flex-wrap: wrap;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    padding: 5px 12px;
+    color: var(--dn-collapse-header-color);
+    border-bottom: 1px solid var(--dn-panel-border-color);
+    background-color: var(--dn-white-gray-light);
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    font-size: 14px;
+    box-shadow: 0px 1px 0px 0px #dce4eb;
+
+    &-expand {
+      transform: rotate(-90deg);
+      font-size: 12px;
+      transition: all 0.15s ease-in-out;
+      margin-right: 3px;
+    }
+  }
+
+  &-content-wrapper {
+    display: flex;
+    justify-content: center;
+    background: var(--dn-resource-content-bg-color);
+  }
+
+  &-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+  }
+
+  &.expand {
+    .@{prefix-cls}-local-layout-content-wrapper {
+      padding: 12px;
+      padding-bottom: 4px;
+    }
+    .@{prefix-cls}-local-layout-content {
+      display: grid;
+      grid-template-columns: repeat(1, 100%);
+      grid-gap: 8px;
+      background-color: var(--dn-white);
+    }
+
+    .@{prefix-cls}-local-layout-header-expand {
+      transform: rotate(0);
+    }
+  }
+
+  &-item {
+    position: relative;
+    user-select: none;
+    background: var(--dn-resource-content-bg-color);
+    min-height: 32px;
+    padding: 0 8px;
+    border-radius: 4px;
+    color: var(--dn-resource-item-color);
+    border: 1px solid var(--dn-resource-content-border-color);
+    display: flex;
+    align-items: center;
+    cursor: grab;
+    transition: color 0.1s ease-out;
+
+    &:hover {
+      color: var(--dn-resource-item-hover-color);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      border-color: var(--dn-resource-item-hover-color);
+    }
+
+    &-icon {
+      margin: 5px 5px 0 5px;
+    }
+
+    &-text {
+      text-align: center;
+      font-size: 12px;
+      line-height: 1;
+      margin-left: 6px;
+    }
+    &-remain {
+      background: var(--dn-resource-content-bg-color);
+    }
+  }
+}

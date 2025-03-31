@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "allowJs": true,
+    "module": "commonjs",
+    "target": "es5",
+    "resolveJsonModule": true
+  }
+}

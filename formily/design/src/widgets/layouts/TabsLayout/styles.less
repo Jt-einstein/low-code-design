@@ -1,0 +1,63 @@
+@import '~low-code-react/lib/variables.less';
+
+.view-tabs-layout {
+  width: 100%;
+
+  .tab-iconL {
+    margin-left: 5px;
+  }
+
+  .tab-iconR {
+    margin-right: 3px;
+  }
+
+  .tab-icon {
+    margin-top: 3px;
+  }
+
+  .@{low-code-ant-prefix}-tabs-tab .anticon {
+    margin-right: 0;
+  }
+}
+
+.view-tabs-layout.@{low-code-prefix}-tabs.@{low-code-ant-prefix}-tabs {
+  &.@{low-code-ant-prefix}-tabs-top>.@{low-code-ant-prefix}-tabs-nav {
+    margin-bottom: 8px;
+  }
+
+  &.@{low-code-ant-prefix}-tabs-card>.@{low-code-ant-prefix}-tabs-nav .@{low-code-ant-prefix}-tabs-tab {
+    background: #fff;
+
+    &-active {
+      background: #4471F6;
+      border-bottom-color: #4471F6;
+    }
+  }
+
+  &.@{low-code-ant-prefix}-tabs-card .@{low-code-ant-prefix}-tabs-tab-with-remove .@{low-code-ant-prefix}-tabs-tab-remove {
+    margin-left: 0;
+  }
+
+  .edit-input {
+    width: 100px;
+    height: 22px;
+    line-height: 22px;
+    color: #fff;
+
+    &::selection {
+      background: #2644af;
+    }
+  }
+}
+
+.view-tabs-layout.@{low-code-prefix}-tabs.@{low-code-ant-prefix}-tabs.@{low-code-ant-prefix}-tabs-card .@{low-code-ant-prefix}-tabs-nav-add {
+  background: #fff;
+}
+
+.view-tabs-layout .@{low-code-ant-prefix}-tabs-tab-active {
+  >.@{low-code-ant-prefix}-tabs-tab-btn {
+    .@{lc-prefix}-TabPane {
+      color: #fff !important;
+    }
+  }
+}

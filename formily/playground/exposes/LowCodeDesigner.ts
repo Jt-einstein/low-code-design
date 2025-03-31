@@ -1,0 +1,1 @@
+export { LowCodeDesigner as default } from 'low-code-formily-design/esm/LowCodeDesigner';

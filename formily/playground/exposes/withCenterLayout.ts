@@ -1,0 +1,1 @@
+export { withCenterLayout as default } from 'low-code-formily-design/esm/utils/utils';

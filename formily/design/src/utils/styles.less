@@ -1,0 +1,23 @@
+@import '~low-code-react/lib/variables.less';
+
+.width-center-layout-outer {
+    &>.@{low-code-ant-prefix}-tabs>.@{low-code-ant-prefix}-tabs-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &>.@{low-code-ant-prefix}-tabs>.@{low-code-ant-prefix}-tabs-nav>.@{low-code-ant-prefix}-tabs-extra-content {
+        width: 50px;
+        z-index: 10;
+
+        &>* {
+            width: max-content;
+        }
+
+        &:last-child {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+}

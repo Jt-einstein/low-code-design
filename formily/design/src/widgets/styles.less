@@ -1,0 +1,181 @@
+@import '~low-code-react/lib/variables.less';
+
+@borderStyle: #d9d9d9 1px solid;
+
+.top-template {
+  display: flex;
+  margin-left: 2px;
+  align-items: center;
+  font-size: 14px;
+  color: #666666;
+
+  >span {
+    font-weight: 600;
+  }
+}
+
+.layout-title {
+  display: flex;
+  align-items: center;
+
+  >span {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 6px;
+    max-width: 192px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+}
+
+/* 重置引入拾取器-影响到formItem样式 */
+// .@{low-code-ant-prefix}-formily-item-feedback-layout-popover {
+//   margin-bottom: 0 !important;
+// }
+
+.choose-template {
+  .top-bar {
+    height: 40px;
+    width: 100%;
+    border-bottom: @borderStyle;
+    padding: 10px 20px;
+  }
+
+  .template-wrapper {
+    display: flex;
+    height: 600px;
+    // height: calc(100vh - 40px);
+
+    .template-type {
+      border-right: @borderStyle;
+      border-bottom: @borderStyle;
+      height: calc(100% - 42px);
+      padding-top: 12px;
+      padding-left: 12px;
+    }
+
+    .template-data {
+      padding-left: 10px;
+      padding-top: 12px;
+      // flex-grow: 1;
+
+      // > button {
+      // margin-right: 8px;
+      // }
+    }
+
+    .maintain-template {
+      padding: 10px 0;
+    }
+  }
+}
+
+/* 设置搜索框宽度100% */
+.@{low-code-prefix}-input-search-wrap {
+  width: 100%;
+}
+
+.version-modify-box {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  // overflow-y: auto;
+  .version-title-box {
+    display: flex;
+    padding: 0 5px 5px;
+    flex-direction: row;
+
+    .version-title {
+      flex: 1;
+      font-size: 16px;
+      font-weight: 600;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.acitonsWidget {
+  color: #258af8;
+
+  .@{low-code-prefix}-upload-list {
+    display: none;
+  }
+}
+
+.view-tabs {
+  width: 100%;
+
+  .tab-iconL {
+    margin-left: 5px;
+  }
+
+  .tab-iconR {
+    margin-right: 3px;
+  }
+
+  .tab-icon {
+    margin-top: 3px;
+  }
+
+  .@{low-code-ant-prefix}-tabs-tab .anticon {
+    margin-right: 0;
+  }
+}
+
+.view-tabs.@{low-code-prefix}-tabs.@{low-code-ant-prefix}-tabs {
+
+  &.@{low-code-ant-prefix}-tabs-card>.@{low-code-ant-prefix}-tabs-nav .@{low-code-ant-prefix}-tabs-tab {
+    background: #fff;
+
+    &-active {
+      background: #4471F6;
+      border-bottom-color: #4471F6;
+    }
+  }
+
+  &.@{low-code-ant-prefix}-tabs-card .@{low-code-ant-prefix}-tabs-tab-with-remove .@{low-code-ant-prefix}-tabs-tab-remove {
+    margin-left: 0;
+  }
+
+  .edit-input {
+    width: 100px;
+    height: 22px;
+    line-height: 22px;
+    color: #fff;
+
+    &::selection {
+      background: #2644af;
+    }
+  }
+}
+
+.view-tabs.@{low-code-prefix}-tabs.@{low-code-ant-prefix}-tabs.@{low-code-ant-prefix}-tabs-card .@{low-code-ant-prefix}-tabs-nav-add {
+  background: #fff;
+}
+
+.view-tabs .@{low-code-ant-prefix}-tabs-tab-active {
+  >.@{low-code-ant-prefix}-tabs-tab-btn {
+    .@{lc-prefix}-TabPane {
+      color: #fff !important;
+    }
+  }
+}
+
+.@{ant-prefix}-scrolling-effect {
+  >.@{low-code-ant-prefix}-dialog-root {
+    .@{low-code-ant-prefix}-dialog-wrap {
+      z-index: -100;
+      position: static;
+    }
+  }
+}
+
+/* 覆盖mcui-form样式影响 */
+// .@{low-code-ant-prefix}-formily-item-control .@{low-code-ant-prefix}-formily-item-control-content .@{low-code-ant-prefix}-formily-item-control-content-component .@{low-code-prefix}-area-limit-wrap {
+//   // 会导致textArea组件宽度100%和inherit不生效，先注释
+//   //width: auto;
+// }

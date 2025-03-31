@@ -1,0 +1,1 @@
+export { createResource as default } from 'low-code-core';

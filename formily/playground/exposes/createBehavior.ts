@@ -1,0 +1,1 @@
+export { createBehavior as default } from 'low-code-core';

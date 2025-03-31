@@ -1,0 +1,65 @@
+{
+  "name": "low-code-react-settings-form",
+  "version": "2.0.11-dev.1",
+  "license": "MIT",
+  "main": "lib",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "esm",
+    "typings",
+    "index.ts"
+  ],
+  "engines": {
+    "npm": ">=3.0.0"
+  },
+  "module": "esm",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alibaba/designable.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alibaba/designable/issues"
+  },
+  "homepage": "https://github.com/alibaba/designable#readme",
+  "scripts": {
+    "build": "rimraf -rf lib esm dist && npm run build:cjs && npm run build:esm && ts-node copy",
+    "build:cjs": "tsc --project tsconfig.build.json",
+    "build:esm": "tsc --project tsconfig.build.json --module es2015 --outDir esm",
+    "build:umd": "rollup --config",
+    "tscheck": "tsc --project tsconfig.json --noEmit true"
+  },
+  "peerDependencies": {
+    "@formily/antd": "2.0.13",
+    "@formily/core": "2.0.13",
+    "@formily/react": "2.0.13",
+    "@formily/reactive": "2.0.13",
+    "@formily/reactive-react": "2.0.13",
+    "@formily/shared": "2.0.13",
+    "antd": "4.24.5"
+  },
+  "devDependencies": {
+    "@formily/antd": "2.0.13",
+    "@formily/core": "2.0.13",
+    "@formily/react": "2.0.13",
+    "@formily/reactive": "2.0.13",
+    "@formily/reactive-react": "2.0.13",
+    "@formily/shared": "2.0.13",
+    "antd": "4.24.5"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.14.7",
+    "low-code-core": "2.0.11-dev.1",
+    "low-code-extension": "2.0.11-dev.1",
+    "low-code-react": "2.0.11-dev.1",
+    "low-code-shared": "2.0.11-dev.1",
+    "@monaco-editor/react": "4.4.6",
+    "monaco-editor": "0.36.1",
+    "react-color": "^2.19.3",
+    "react-tiny-popover": "^6.0.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "210a0235103c47ae2df8ccace39f4520d453e07d"
+}

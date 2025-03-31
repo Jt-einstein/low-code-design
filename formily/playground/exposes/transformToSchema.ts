@@ -1,0 +1,1 @@
+export { transformToSchema as default } from 'low-code-formily-transformer';

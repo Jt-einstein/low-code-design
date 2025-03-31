@@ -1,0 +1,44 @@
+{
+  "name": "low-code-react-sandbox",
+  "version": "2.0.11-dev.1",
+  "license": "MIT",
+  "main": "lib",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "esm",
+    "typings",
+    "index.ts"
+  ],
+  "engines": {
+    "npm": ">=3.0.0"
+  },
+  "module": "esm",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alibaba/designable.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alibaba/designable/issues"
+  },
+  "homepage": "https://github.com/alibaba/designable#readme",
+  "scripts": {
+    "build": "rimraf -rf lib esm dist && npm run build:cjs && npm run build:esm && npm run build:umd",
+    "build:cjs": "tsc --project tsconfig.build.json",
+    "build:esm": "tsc --project tsconfig.build.json --module es2015 --outDir esm",
+    "build:umd": "rollup --config",
+    "tscheck": "tsc --project tsconfig.json --noEmit true"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0 || >=17.0.0"
+  },
+  "dependencies": {
+    "low-code-extension": "2.0.11-dev.1",
+    "low-code-react": "2.0.11-dev.1",
+    "low-code-shared": "2.0.11-dev.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "210a0235103c47ae2df8ccace39f4520d453e07d"
+}

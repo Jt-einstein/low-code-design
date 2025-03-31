@@ -1,0 +1,45 @@
+// @import '~antd/lib/style/themes/default.less';
+@import '~low-code-react/lib/variables.less';
+
+.dn-designable-form {
+
+  .@{ant-prefix}-input,
+  .@{ant-prefix}-input-number,
+  .@{ant-prefix}-input-affix-wrapper,
+  .@{ant-prefix}-cascader-picker,
+  .@{ant-prefix}-picker-input,
+  .@{ant-prefix}-picker,
+  .@{ant-prefix}-cascader-picker-label,
+  .@{ant-prefix}-slider,
+  .@{ant-prefix}-checkbox,
+  .@{ant-prefix}-rate,
+  .@{ant-prefix}-switch,
+  .@{ant-prefix}-radio,
+  .@{ant-prefix}-radio-wrapper,
+  .@{ant-prefix}-checkbox-group,
+  .@{ant-prefix}-checkbox-wrapper,
+  .@{ant-prefix}-radio-group,
+  .@{ant-prefix}-upload,
+  .@{ant-prefix}-transfer,
+  .@{ant-prefix}-select,
+  .@{ant-prefix}-select-selector {
+    pointer-events: none;
+
+    input {
+      pointer-events: none !important;
+    }
+  }
+
+  .anticon svg {
+    pointer-events: none;
+  }
+}
+
+.@{ant-prefix}-formily-layout.dn-designable-form.@{low-code-prefix}-form>form {
+  height: 100%;
+}
+
+/* 因className样式字段替换掉 描述字段-需要在样式上隐藏掉描述 */
+.mc-ant-formily-item-control .mc-ant-formily-item-extra {
+  display: none !important;
+}

@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "module": "CommonJS",
+    "target": "es2017",
+    "allowJs": false,
+    "noUnusedLocals": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "downlevelIteration": true,
+    "baseUrl": ".",
+    "paths": {
+      "low-code-*": ["./packages/*/src"],
+      "low-code-formily-*": ["./formily/*/src"],
+      "low-code-formily-antd/esm/*": ["./formily/antd/src/*"]
+    },
+    "resolveJsonModule": true
+  },
+}

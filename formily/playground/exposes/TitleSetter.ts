@@ -1,0 +1,1 @@
+export { TitleSetter as default } from 'low-code-formily-design/esm/widgets/TitleSetter';

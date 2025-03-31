@@ -1,0 +1,1 @@
+export { onFieldValueChange as default } from '@formily/core';

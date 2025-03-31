@@ -1,0 +1,27 @@
+@import '~low-code-react/lib/variables.less';
+
+.view-port-wigdet {
+    width: 100%;
+    background: #EEF0F3;
+
+    &-toolbar {
+        margin: 0 4px;
+        padding: 5px 7px 2px;
+        background: #fff;
+    }
+
+    &-workspace {
+        display: flex;
+        width: 100%;
+        height: calc(100% - 35px);
+        padding: 8px 16px 16px;
+
+        >.@{low-code-ant-prefix}-tabs {
+            overflow: inherit;
+        }
+
+        .dn-workspace-panel {
+            background-color: #fff;
+        }
+    }
+}

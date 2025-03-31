@@ -1,0 +1,47 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~low-code-react/lib/variables.less';
+
+.event-setter-button {
+  width: 100%;
+}
+
+.event-tabs {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 1px solid #efefef;
+  height: 600px;
+
+  .event-tabs-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    width: 190px;
+    border-right: 1px solid #efefef;
+    height: 100%;
+    overflow-y: auto;
+
+    li {
+      height: 40px;
+      margin-top: 4px;
+      margin-bottom: 8px;
+      padding: 0 16px;
+      overflow: hidden;
+      line-height: 40px;
+      text-overflow: ellipsis;
+      cursor: pointer;
+    }
+
+    .active {
+      color: #1890ff;
+      background-color: #e6f7ff;
+    }
+  }
+
+  .event-tabs-content {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+  }
+}
