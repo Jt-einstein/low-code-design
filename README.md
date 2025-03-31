@@ -1,4 +1,4 @@
-<h1>MC low code</h1>
+<h1>low code</h1>
 
 ---
 
@@ -6,10 +6,6 @@
 
 If you are worrying about something builder, Such as form builder/table builder/chart builder/app builder etc.
 Designable is your perfect choice.
-
-## Screenshot
-
-<img src="https://ibb.co/zhXQb2R" style="box-shadow:0px 0px 20px #aaa;border:1px solid #ddd"/>
 
 ## Features
 
@@ -37,10 +33,3 @@ Designable is your perfect choice.
 - `sh publish.sh dev`
 - 发布正式版本：
 - `sh publish.sh`
-
-## contacts
-
-<p>
-<img width="32px" height="32px" src="https://s1-imfile.feishucdn.com/static-resource/v1/v2_98c5a0f0-2abe-4c26-8c58-db460bd4d34g~?image_size=noop&cut_type=&quality=&format=image&sticker_format=.webp" />
-<img width="32px" height="32px" src="https://s1-imfile.feishucdn.com/static-resource/avatar/v2_f755aa6c-addf-4d42-a7ef-bec870d2cc4g_640.webp" />
-</p>
