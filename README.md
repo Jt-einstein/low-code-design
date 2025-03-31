@@ -14,6 +14,9 @@ Designable is your perfect choice.
 - 🎨 Support Low Code and No Code
 - 🏅 Strong scalability
 
+## Dev
+- `yarn`：获取依赖
+- `yarn dev`： 启动本地开发
 
 ## Test
 - `yarn test`：执行所有测试用例
