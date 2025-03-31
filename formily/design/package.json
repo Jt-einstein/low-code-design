@@ -50,7 +50,7 @@
     "@formily/shared": "2.0.13",
     "low-code-core": "2.0.11-dev.1",
     "low-code-extension": "2.0.11-dev.1",
-    "low-code-antd": "2.0.11-dev.1",
+    "low-code-formily-antd": "2.0.11-dev.1",
     "low-code-render": "2.0.11-dev.1",
     "low-code-setters": "2.0.11-dev.1",
     "low-code-formily-transformer": "2.0.11-dev.1",

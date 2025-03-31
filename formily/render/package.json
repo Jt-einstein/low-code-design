@@ -49,7 +49,7 @@
   },
   "dependencies": {
     "low-code-extension": "2.0.11-dev.1",
-    "low-code-antd": "2.0.11-dev.1",
+    "low-code-formily-antd": "2.0.11-dev.1",
     "low-code-formily-transformer": "2.0.11-dev.1",
     "low-code-react": "2.0.11-dev.1",
     "@rc-component/mutate-observer": "^1.1.0"
