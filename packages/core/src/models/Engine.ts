@@ -5,7 +5,6 @@ import { Cursor } from './Cursor';
 import { Keyboard } from './Keyboard';
 import { Screen, ScreenType } from './Screen';
 import { Event, uid, globalThisPolyfill } from '@astraflux/low-code-shared';
-import { GqlSchema } from './GqlSchema';
 import { GlobalUtils } from './GlobalUtils';
 import { McConfig } from './McConfig';
 
@@ -25,10 +24,7 @@ export class Engine extends Event {
   keyboard: Keyboard;
 
   screen: Screen;
-
-  /** gql schema-setting */
-  gqlSchema: GqlSchema;
-  /** gql schema-setting */
+  
   globalUtils: GlobalUtils;
   /** 全局McConfig配置内容 */
   mcConfig: McConfig;
@@ -50,8 +46,6 @@ export class Engine extends Event {
     this.keyboard = new Keyboard(this);
     /** 全局配置 */
     this.mcConfig = new McConfig();
-    /** gql schema数据 */
-    this.gqlSchema = new GqlSchema([]);
     /* 全局工具函数 */
     this.globalUtils = new GlobalUtils();
   }

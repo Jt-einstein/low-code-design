@@ -1,1 +1,1 @@
-export * as default from '@astraflux/low-code-formily-design/esm/hooks';
+export * as default from '@mc/low-code-formily-design/esm/hooks';

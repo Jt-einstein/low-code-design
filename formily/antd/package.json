@@ -64,8 +64,6 @@
     "@astraflux/low-code-formily-transformer": "0.1.1-alpha.0",
     "@astraflux/low-code-react": "0.1.1-alpha.0",
     "@astraflux/low-code-react-settings-form": "0.1.1-alpha.0",
-    "@mapbox/mapbox-gl-draw": "^1.4.1",
-    "@mapbox/mapbox-gl-geocoder": "^5.0.1",
     "@types/mapbox-gl": "^2.7.10",
     "@types/mapbox__mapbox-gl-draw": "^1.3.3",
     "@types/mapbox__mapbox-gl-geocoder": "^4.7.3",

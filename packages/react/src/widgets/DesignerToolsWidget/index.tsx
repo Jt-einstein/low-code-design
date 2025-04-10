@@ -12,7 +12,8 @@ import { IconWidget } from '../IconWidget';
 import cls from 'classnames';
 import './styles.less';
 import { Radio, Button, InputNumber } from 'antd';
-import { isFn } from '@formily/shared';
+import { isFn } from '@astraflux/low-code-shared';
+
 type DesignerToolsType = 'HISTORY' | 'CURSOR' | 'SCREEN_TYPE';
 
 export type IDesignerToolsWidgetProps = {

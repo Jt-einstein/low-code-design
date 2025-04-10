@@ -1,1 +1,1 @@
-export { Formily as default } from '@astraflux/low-code-formily-design/esm/utils/utils';
+export { Formily as default } from '@mc/low-code-formily-design/esm/utils/utils';

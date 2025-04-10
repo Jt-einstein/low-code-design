@@ -1,1 +1,1 @@
-export { withCenterLayout as default } from '@astraflux/low-code-formily-design/esm/utils/utils';
+export { withCenterLayout as default } from '@mc/low-code-formily-design/esm/utils/utils';

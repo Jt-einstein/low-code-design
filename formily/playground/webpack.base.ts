@@ -12,7 +12,7 @@ const getWorkspaceAlias = () => {
   const workspaces = pkg.workspaces;
   if (Array.isArray(workspaces)) {
     workspaces.forEach((pattern) => {
-      const { found } = new GlobSync(pattern, { cwd: basePath });
+      const { found } = new GlobSync(pattern, { cwd: basePath }) as any;
       found.forEach((name) => {
         const pkg = fs.readJSONSync(
           path.resolve(basePath, name, './package.json')

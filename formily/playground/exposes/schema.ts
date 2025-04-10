@@ -1,1 +1,1 @@
-export * as default from '@astraflux/low-code-formily-design/esm/utils/schema';
+export * as default from '@mc/low-code-formily-design/esm/utils/schema';

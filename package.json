@@ -9,7 +9,7 @@
     "formily/*"
   ],
   "scripts": {
-    "dev": "yarn workspace low-code-playground start",
+    "dev": "yarn workspace @astraflux/low-code-formily-playground start",
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
     "build": "rimraf -rf packages/*/{lib,esm} && lerna run build",
@@ -50,6 +50,7 @@
     "yargs": "^16.x"
   },
   "devDependencies": {
+    "antd": "4.24.5",
     "@alifd/next": "^1.19.1",
     "@ant-design/icons": "^4.0.2",
     "@rollup/plugin-commonjs": "^17.0.0",

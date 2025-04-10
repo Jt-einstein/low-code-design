@@ -11,6 +11,5 @@ export * from './Dragon';
 export * from './Keyboard';
 export * from './Shortcut';
 export * from './History';
-export * from './GqlSchema';
 export * from './McConfig';
 export * from './GlobalUtils';

@@ -7,7 +7,6 @@ import path from 'path';
 import merge from 'webpack-merge';
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import ModuleFederationExposesPlugin from 'module-federation-exposes-webpack-plugin';
-import { createModuleFederationPlugin } from './webpack.common';
 // 导入devServer类型定义
 import 'webpack-dev-server';
 
@@ -36,7 +35,6 @@ export default merge(baseConfig, {
         return libraryName.replace('./', '@mc/low-code-formily-design/esm/');
       },
     }),
-    ...createModuleFederationPlugin(),
     // new BundleAnalyzerPlugin(),
   ],
   devServer: {

@@ -46,6 +46,7 @@
     "@formily/shared": "2.0.13",
     "@types/react": "^17.0.80",
     "@types/react-dom": "^17.0.25",
+    "@monaco-editor/react": "4.4.6",
     "antd": "4.24.5",
     "react": ">=16.8.0 || >=17.0.0",
     "react-dom": ">=16.8.0",
