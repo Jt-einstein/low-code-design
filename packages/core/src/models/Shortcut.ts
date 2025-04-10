@@ -1,4 +1,4 @@
-import { isFn, KeyCode } from 'low-code-shared';
+import { isFn, KeyCode } from '@astraflux/low-code-shared';
 import { IEngineContext } from '../types';
 
 export { KeyCode };

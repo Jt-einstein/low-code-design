@@ -1,4 +1,4 @@
-import { GlobalRegistry } from 'low-code-core';
+import { GlobalRegistry } from '@astraflux/low-code-core';
 
 GlobalRegistry.registerDesignerLocales({
   'zh-CN': {

@@ -2,11 +2,11 @@ import React, { useEffect } from 'react';
 import {
   transformToSchema,
   transformToTreeNode,
-} from 'low-code-formily-transformer';
-import { TreeNode, ITreeNode } from 'low-code-core';
-import { MonacoInput } from 'low-code-react-settings-form';
+} from '@astraflux/low-code-formily-transformer';
+import { TreeNode, ITreeNode } from '@astraflux/low-code-core';
+import { MonacoInput } from '@astraflux/low-code-react-settings-form';
 import { CEditConfig } from './layouts/CardLayout/ViewTabs/editConfig';
-import { utils } from 'low-code-extension';
+import { utils } from '@astraflux/low-code-extension';
 import { message } from 'antd';
 interface ICssEditorWidgetProps {
   tree: TreeNode;

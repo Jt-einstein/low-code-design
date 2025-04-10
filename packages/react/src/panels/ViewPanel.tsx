@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { TreeNode, ITreeNode, WorkbenchTypes } from 'low-code-core';
+import { TreeNode, ITreeNode, WorkbenchTypes } from '@astraflux/low-code-core';
 import { observer } from '@formily/reactive-react';
 import { useTree, useWorkbench } from '../hooks';
 import { Viewport } from '../containers';
-import { requestIdle } from 'low-code-shared';
+import { requestIdle } from '@astraflux/low-code-shared';
 
 export interface IViewPanelProps {
   type: WorkbenchTypes;
@@ -59,6 +59,6 @@ export const ViewPanel: React.FC<IViewPanelProps> = observer((props) => {
   );
 });
 
-ViewPanel.defaultProps = {
+(ViewPanel as any).defaultProps = {
   scrollable: true,
 };

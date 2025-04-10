@@ -1,6 +1,6 @@
 import { Engine } from './Engine';
 import { action, define, observable } from '@formily/reactive';
-import { globalThisPolyfill } from 'low-code-shared';
+import { globalThisPolyfill } from '@astraflux/low-code-shared';
 
 export enum CursorStatus {
   Normal = 'NORMAL',

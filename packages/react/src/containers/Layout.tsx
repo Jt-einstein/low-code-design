@@ -1,12 +1,20 @@
-import React, { useContext, Fragment, useRef, useLayoutEffect } from 'react';
-import { each } from 'low-code-shared';
+import React, {
+  useContext,
+  Fragment,
+  useRef,
+  useLayoutEffect,
+  ReactNode,
+} from 'react';
+import { each } from '@astraflux/low-code-shared';
 import { DesignerLayoutContext } from '../context';
 import { IDesignerLayoutProps } from '../types';
 import cls from 'classnames';
 
-export const Layout: React.FC<IDesignerLayoutProps> = (props) => {
+export const Layout: React.FC<
+  IDesignerLayoutProps
+> & { defaultProps: any } = (props) => {
   const layout = useContext(DesignerLayoutContext);
-  const ref = useRef<HTMLDivElement>();
+  const ref = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
     if (ref.current) {

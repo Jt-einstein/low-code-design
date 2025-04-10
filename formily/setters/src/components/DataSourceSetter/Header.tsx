@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import { observer } from '@formily/reactive-react';
-import { usePrefix } from 'low-code-react';
+import { usePrefix } from '@astraflux/low-code-react';
 import './styles.less';
 
 export interface IHeaderProps {

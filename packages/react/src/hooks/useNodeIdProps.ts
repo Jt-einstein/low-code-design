@@ -1,4 +1,4 @@
-import { TreeNode } from 'low-code-core';
+import { TreeNode } from '@astraflux/low-code-core';
 import { useDesigner } from './useDesigner';
 import { useTreeNode } from './useTreeNode';
 

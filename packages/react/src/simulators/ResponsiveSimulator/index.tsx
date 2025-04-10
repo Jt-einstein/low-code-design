@@ -6,11 +6,11 @@ import {
   DragMoveEvent,
   DragStopEvent,
   CursorType,
-} from 'low-code-core';
+} from '@astraflux/low-code-core';
 import {
   calcSpeedFactor,
   createUniformSpeedAnimation,
-} from 'low-code-shared';
+} from '@astraflux/low-code-shared';
 import { useScreen, useDesigner, usePrefix } from '../../hooks';
 import { IconWidget } from '../../widgets';
 import { ResizeHandle, ResizeHandleType } from './handle';
@@ -21,7 +21,7 @@ import './styles.less';
 const useResizeEffect = (
   container: React.MutableRefObject<HTMLDivElement>,
   content: React.MutableRefObject<HTMLDivElement>,
-  engine: Engine
+  engine: Engine & { subscribeTo?: any }
 ) => {
   let status: ResizeHandleType = null;
   let startX = 0;
@@ -132,8 +132,8 @@ export interface IResponsiveSimulatorProps
 
 export const ResponsiveSimulator: React.FC<IResponsiveSimulatorProps> =
   observer((props) => {
-    const container = useRef<HTMLDivElement>();
-    const content = useRef<HTMLDivElement>();
+    const container = useRef<HTMLDivElement>(null);
+    const content = useRef<HTMLDivElement>(null);
     const prefix = usePrefix('responsive-simulator');
     const screen = useScreen();
     useDesigner((engine) => {

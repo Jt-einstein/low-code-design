@@ -1,4 +1,4 @@
-import { EOperationBtnType } from 'low-code-extension';
+import { EOperationBtnType } from '@astraflux/low-code-extension';
 
 export function pageSetting() {
   return {

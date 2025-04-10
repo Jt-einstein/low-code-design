@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { requestIdle } from 'low-code-shared';
+import React, { ReactNode, useEffect, useState } from 'react';
+import { requestIdle } from '@astraflux/low-code-shared';
 import { observer } from '@formily/reactive-react';
 import { TextWidget, IconWidget } from '../widgets';
 import { usePrefix, useWorkbench } from '../hooks';
@@ -9,7 +9,9 @@ export interface ISettingPanelProps {
   extra?: React.ReactNode;
 }
 
-export const SettingsPanel: React.FC<ISettingPanelProps> = observer((props) => {
+export const SettingsPanel: React.FC<
+  ISettingPanelProps & { children?: ReactNode }
+> = observer((props) => {
   const prefix = usePrefix('settings-panel');
   const workbench = useWorkbench();
   const [innerVisible, setInnerVisible] = useState(true);

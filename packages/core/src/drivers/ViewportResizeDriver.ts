@@ -1,8 +1,8 @@
-import { EventDriver } from 'low-code-shared';
+import { EventDriver } from '@astraflux/low-code-shared';
 import { Engine } from '../models/Engine';
 import { ViewportResizeEvent } from '../events';
 import { ResizeObserver } from '@juggle/resize-observer';
-import { globalThisPolyfill } from 'low-code-shared';
+import { globalThisPolyfill } from '@astraflux/low-code-shared';
 
 export class ViewportResizeDriver extends EventDriver<Engine> {
   request = null;

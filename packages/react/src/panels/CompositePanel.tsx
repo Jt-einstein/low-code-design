@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { isValid } from 'low-code-shared';
+import React, { ReactNode, useEffect, useRef, useState } from 'react';
+import { isValid } from '@astraflux/low-code-shared';
 import cls from 'classnames';
 import { IconWidget, TextWidget } from '../widgets';
 import { usePrefix } from '../hooks';
@@ -52,7 +52,9 @@ const getDefaultKey = (children: React.ReactNode) => {
   return items?.[0].key;
 };
 
-export const CompositePanel: React.FC<ICompositePanelProps> & {
+export const CompositePanel: React.FC<
+  ICompositePanelProps & { children?: ReactNode }
+> & {
   Item?: React.FC<ICompositePanelItemProps>;
 } = (props) => {
   const prefix = usePrefix('composite-panel');

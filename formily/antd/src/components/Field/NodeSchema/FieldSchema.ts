@@ -3,7 +3,7 @@ import {
   DataSourceSetter,
   ReactionsSetter,
   ValidatorSetter,
-} from 'low-code-setters';
+} from '@astraflux/low-code-formily-setters';
 import { ISchema } from '@formily/react';
 import { SchemaProps } from './BaseFieldSchema';
 

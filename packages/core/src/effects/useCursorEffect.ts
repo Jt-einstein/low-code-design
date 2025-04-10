@@ -5,7 +5,7 @@ import {
   DragMoveEvent,
   DragStopEvent,
 } from '../events';
-import { requestIdle } from 'low-code-shared';
+import { requestIdle } from '@astraflux/low-code-shared';
 
 export const useCursorEffect = (engine: Engine) => {
   engine.subscribeTo(MouseMoveEvent, (event) => {

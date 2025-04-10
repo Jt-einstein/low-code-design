@@ -1,6 +1,6 @@
 import { ISchema, Schema } from '@formily/json-schema';
-import { ITreeNode } from 'low-code-core';
-import { clone, uid } from 'low-code-shared';
+import { ITreeNode } from '@astraflux/low-code-core';
+import { clone, uid } from '@astraflux/low-code-shared';
 
 export interface ITransformerOptions {
   designableFieldName?: string;

@@ -160,6 +160,6 @@ generateExposes({
   exportFile: path.resolve(__dirname, '../../design/src/index.ts'),
   generateDir: path.resolve(__dirname, '../exposes'),
   transform: (libraryName: string) => {
-    return libraryName.replace('./', 'low-code-formily-design/esm/');
+    return libraryName.replace('./', '@astraflux/low-code-formily-design/esm/');
   },
 });

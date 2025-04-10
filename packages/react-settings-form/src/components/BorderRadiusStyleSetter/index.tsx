@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconWidget } from 'low-code-react';
+import { IconWidget } from '@astraflux/low-code-react';
 import { BoxStyleSetter } from '../BoxStyleSetter';
 export interface IBorderRadiusStyleSetterProps {
   value?: string;

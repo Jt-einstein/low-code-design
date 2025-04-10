@@ -30,12 +30,12 @@ const presets = () => {
     '@formily/core': 'Formily.Core',
     '@formily/json-schema': 'Formily.JSONSchema',
     '@formily/react': 'Formily.React',
-    'low-code-shared': 'Designable.Shared',
-    'low-code-core': 'Designable.Core',
-    'low-code-react': 'Designable.React',
-    'low-code-react-sandbox': 'Designable.ReactSandbox',
-    'low-code-react-settings-form': 'Designable.ReactSettingsForm',
-    'low-code-extension': 'Designable.Extension',
+    '@astraflux/low-code-shared': 'Designable.Shared',
+    '@astraflux/low-code-core': 'Designable.Core',
+    '@astraflux/low-code-react': 'Designable.React',
+    '@astraflux/low-code-react-sandbox': 'Designable.ReactSandbox',
+    '@astraflux/low-code-react-settings-form': 'Designable.ReactSettingsForm',
+    '@astraflux/low-code-extension': 'Designable.Extension',
   };
   return [
     typescript({

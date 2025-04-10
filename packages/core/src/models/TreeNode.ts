@@ -1,5 +1,5 @@
 import { action, define, observable, toJS } from '@formily/reactive';
-import { uid, isFn } from 'low-code-shared';
+import { uid, isFn } from '@astraflux/low-code-shared';
 import { Operation } from './Operation';
 import {
   InsertBeforeEvent,

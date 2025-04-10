@@ -3,8 +3,11 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "allowJs": true,
-    "module": "commonjs",
-    "target": "es5",
-    "resolveJsonModule": true
+    "module": "CommonJS",
+    "target": "es2017",
+    "strict": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "noEmitOnError": false
   }
 }

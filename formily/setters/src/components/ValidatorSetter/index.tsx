@@ -7,11 +7,11 @@ import {
   Schema,
   ISchema,
 } from '@formily/react';
-import { GlobalRegistry } from 'low-code-core';
+import { GlobalRegistry } from '@astraflux/low-code-core';
 import { ArrayItems } from '@formily/antd';
-import { FoldItem } from 'low-code-react-settings-form';
+import { FoldItem } from '@astraflux/low-code-react-settings-form';
 import { Select } from 'antd';
-import { deleteNullValueProperty } from 'low-code-shared';
+import { deleteNullValueProperty } from '@astraflux/low-code-shared';
 
 export interface IValidatorSetterProps {
   value?: any;

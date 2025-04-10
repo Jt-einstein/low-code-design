@@ -2,14 +2,14 @@ import React, { Fragment, useState } from 'react';
 import { observer } from '@formily/react';
 import { Collapse } from 'antd';
 import { CollapseProps, CollapsePanelProps } from 'antd/lib/collapse';
-import { TreeNode, createBehavior, createResource } from 'low-code-core';
+import { TreeNode, createBehavior, createResource } from '@astraflux/low-code-core';
 import {
   useTreeNode,
   useNodeIdProps,
   DroppableWidget,
   TreeNodeWidget,
   DnFC,
-} from 'low-code-react';
+} from '@astraflux/low-code-react';
 import { toArr } from '@formily/shared';
 import { LoadTemplate } from '../../common/LoadTemplate';
 import { useDropTemplate } from '../../hooks';

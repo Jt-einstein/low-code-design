@@ -2,14 +2,14 @@ import React, { Fragment, useState } from 'react';
 import { observer } from '@formily/react';
 import { Tabs } from 'antd';
 import { TabsProps, TabPaneProps } from 'antd/lib/tabs';
-import { TreeNode, createBehavior, createResource } from 'low-code-core';
+import { TreeNode, createBehavior, createResource } from '@astraflux/low-code-core';
 import {
   useNodeIdProps,
   useTreeNode,
   TreeNodeWidget,
   DroppableWidget,
   DnFC,
-} from 'low-code-react';
+} from '@astraflux/low-code-react';
 import { LoadTemplate } from '../../common/LoadTemplate';
 import { useDropTemplate } from '../../hooks';
 import { VoidFieldSchema } from '../Field';

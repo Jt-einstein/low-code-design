@@ -1,4 +1,4 @@
-import { EventDriver } from 'low-code-shared';
+import { EventDriver } from '@astraflux/low-code-shared';
 import { Engine } from '../models/Engine';
 import { MouseMoveEvent } from '../events';
 export class MouseMoveDriver extends EventDriver<Engine> {

@@ -1,6 +1,6 @@
 {
-  "name": "low-code-react-sandbox",
-  "version": "2.0.11-dev.1",
+  "name": "@astraflux/low-code-react-sandbox",
+  "version": "0.1.1-alpha.0",
   "license": "MIT",
   "main": "lib",
   "types": "lib/index.d.ts",
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/alibaba/designable#readme",
   "scripts": {
-    "build": "rimraf -rf lib esm dist && npm run build:cjs && npm run build:esm && npm run build:umd",
+    "build": "rimraf -rf lib esm dist && npm run build:cjs && npm run build:esm",
     "build:cjs": "tsc --project tsconfig.build.json",
     "build:esm": "tsc --project tsconfig.build.json --module es2015 --outDir esm",
     "build:umd": "rollup --config",
@@ -33,9 +33,9 @@
     "react": ">=16.8.0 || >=17.0.0"
   },
   "dependencies": {
-    "low-code-extension": "2.0.11-dev.1",
-    "low-code-react": "2.0.11-dev.1",
-    "low-code-shared": "2.0.11-dev.1"
+    "@astraflux/low-code-extension": "0.1.1-alpha.0",
+    "@astraflux/low-code-react": "0.0.1",
+    "@astraflux/low-code-shared": "0.1.1-alpha.0"
   },
   "publishConfig": {
     "access": "public"

@@ -1,6 +1,6 @@
 import { Tooltip as AntdTooltip } from 'antd';
-import { DnFC, DroppableWidget, useTreeNode } from 'low-code-react';
-import { createBehavior, createResource } from 'low-code-core';
+import { DnFC, DroppableWidget, useTreeNode } from '@astraflux/low-code-react';
+import { createBehavior, createResource } from '@astraflux/low-code-core';
 import React from 'react';
 import { useField } from '@formily/react';
 import type { Field } from '@formily/core/esm/models';

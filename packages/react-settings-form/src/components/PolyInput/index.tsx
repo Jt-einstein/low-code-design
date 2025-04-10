@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Button } from 'antd';
-import { usePrefix, IconWidget } from 'low-code-react';
+import { usePrefix, IconWidget } from '@astraflux/low-code-react';
 import cls from 'classnames';
 import './styles.less';
 

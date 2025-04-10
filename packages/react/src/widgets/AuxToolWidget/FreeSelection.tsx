@@ -1,8 +1,8 @@
 import React from 'react';
 import { useCursor, usePrefix, useViewport } from '../../hooks';
 import { observer } from '@formily/reactive-react';
-import { CursorStatus, CursorType } from 'low-code-core';
-import { calcRectByStartEndPoint } from 'low-code-shared';
+import { CursorStatus, CursorType } from '@astraflux/low-code-core';
+import { calcRectByStartEndPoint } from '@astraflux/low-code-shared';
 import cls from 'classnames';
 
 export const FreeSelection = observer(() => {

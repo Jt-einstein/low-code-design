@@ -1,5 +1,5 @@
 import { Path } from '@formily/path';
-import { requestIdle, globalThisPolyfill } from 'low-code-shared';
+import { requestIdle, globalThisPolyfill } from '@astraflux/low-code-shared';
 import { Engine, TreeNode } from '../models';
 import { MouseDoubleClickEvent, MouseClickEvent } from '../events';
 

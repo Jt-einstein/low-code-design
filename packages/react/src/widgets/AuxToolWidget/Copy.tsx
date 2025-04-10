@@ -1,5 +1,5 @@
 import React from 'react';
-import { TreeNode } from 'low-code-core';
+import { TreeNode } from '@astraflux/low-code-core';
 import { useOperation, usePrefix } from '../../hooks';
 import { IconWidget } from '../IconWidget';
 import { Button } from 'antd';

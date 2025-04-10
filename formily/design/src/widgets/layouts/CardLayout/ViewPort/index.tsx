@@ -2,7 +2,7 @@ import {
   DesignerToolsWidget,
   ToolbarPanel,
   ViewToolsWidget,
-} from 'low-code-react';
+} from '@astraflux/low-code-react';
 import React from 'react';
 import { observer } from '@formily/reactive-react';
 import './styles.less';

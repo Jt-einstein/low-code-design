@@ -7,7 +7,7 @@ export function createModuleFederationPlugin() {
     new container.ModuleFederationPlugin({
       // 应用名，全局唯一，不可冲突。
       name: 'low-code',
-      library: { type: 'var', name: 'mcLowCode' },
+      library: { type: 'var', name: 'mcLowCodeFormilyDesign' },
       // 暴露的文件名称
       filename: 'remoteEntry.js',
       // 远程应用暴露出的模块名

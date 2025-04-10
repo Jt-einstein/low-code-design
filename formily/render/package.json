@@ -1,6 +1,6 @@
 {
-  "name": "low-code-formily-render",
-  "version": "2.0.11-dev.1",
+  "name": "@astraflux/low-code-formily-render",
+  "version": "0.1.1-alpha.0",
   "license": "MIT",
   "main": "lib",
   "files": [
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/alibaba/designable#readme",
   "scripts": {
-    "build": "rimraf -rf lib esm dist && npm run build:cjs && npm run build:esm && ts-node copy",
+    "build": "rimraf -rf lib esm dist && npm run build:cjs && npm run build:esm",
     "build:cjs": "tsc --project tsconfig.build.json",
     "build:esm": "tsc --project tsconfig.build.json --module es2015 --outDir esm",
     "tscheck": "tsc --project tsconfig.json --noEmit true"
@@ -35,7 +35,6 @@
     "@formily/antd": "2.0.13",
     "@formily/core": "2.0.13",
     "@formily/react": "2.0.13",
-    "low-code-graphql": "2.0.11-dev.1",
     "antd": "4.24.5",
     "dayjs": "1.11.10"
   },
@@ -48,11 +47,13 @@
     "react-dom": ">=16.8.0"
   },
   "dependencies": {
-    "low-code-extension": "2.0.11-dev.1",
-    "low-code-formily-antd": "2.0.11-dev.1",
-    "low-code-formily-transformer": "2.0.11-dev.1",
-    "low-code-react": "2.0.11-dev.1",
-    "@rc-component/mutate-observer": "^1.1.0"
+    "@astraflux/low-code-extension": "0.1.1-alpha.0",
+    "@astraflux/low-code-formily-antd": "0.1.1-alpha.0",
+    "@astraflux/low-code-formily-transformer": "0.1.1-alpha.0",
+    "@astraflux/low-code-react": "0.0.1",
+    "@rc-component/mutate-observer": "^1.1.0",
+    "@types/react": "^17.0.80",
+    "@types/react-dom": "^17.0.25"
   },
   "gitHead": "210a0235103c47ae2df8ccace39f4520d453e07d"
 }

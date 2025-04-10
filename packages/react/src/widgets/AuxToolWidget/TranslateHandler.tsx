@@ -1,7 +1,7 @@
 import React from 'react';
 import cls from 'classnames';
 import { useDesigner, usePrefix } from '../../hooks';
-import { TreeNode } from 'low-code-core';
+import { TreeNode } from '@astraflux/low-code-core';
 import { IconWidget } from '../IconWidget';
 
 export interface ITranslateHandlerProps {

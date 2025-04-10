@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { useCursor, usePrefix, useDesigner } from '../../hooks';
-import { CursorStatus } from 'low-code-core';
+import { CursorStatus } from '@astraflux/low-code-core';
 import { autorun } from '@formily/reactive';
 import { observer } from '@formily/reactive-react';
 import { NodeTitleWidget } from '../NodeTitleWidget';
@@ -9,7 +9,7 @@ import './styles.less';
 export const GhostWidget = observer(() => {
   const designer = useDesigner();
   const cursor = useCursor();
-  const ref = useRef<HTMLDivElement>();
+  const ref = useRef<HTMLDivElement>(null);
   const prefix = usePrefix('ghost');
   const draggingNodes = designer.findDraggingNodes();
   const firstNode = draggingNodes[0];

@@ -1,5 +1,5 @@
 import { observer } from '@formily/reactive-react';
-import { ArrayCards, ArrayTable, Text } from 'low-code-formily-antd';
+import { ArrayCards, ArrayTable, Text } from '@astraflux/low-code-formily-antd';
 import {
   CompositePanel,
   Designer,
@@ -8,13 +8,13 @@ import {
   ResourceWidget,
   SettingsPanel,
   StudioPanel,
-} from 'low-code-react';
-import { SettingsForm } from 'low-code-react-settings-form';
+} from '@astraflux/low-code-react';
+import { SettingsForm } from '@astraflux/low-code-react-settings-form';
 import React from 'react';
 import { getBaseComponents, getLayoutComponents } from './const/components';
 import { LowCodeDesignerProps } from './type';
 import { Locales } from './const/locales';
-import { GlobalRegistry } from 'low-code-core';
+import { GlobalRegistry } from '@astraflux/low-code-core';
 import { ConfigProvider as AConfigProvider } from 'antd';
 import { Layout } from './widgets/layouts';
 import { LocalFormworkWidget } from './widgets/LocalFormworkWidget';

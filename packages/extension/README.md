@@ -1,1 +1,1 @@
-# low-code-extension
+# @astraflux/low-code-extension

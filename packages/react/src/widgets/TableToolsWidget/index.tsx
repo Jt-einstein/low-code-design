@@ -1,7 +1,7 @@
 import React from 'react';
 import { Space, Divider, Button } from 'antd';
 import { observer } from '@formily/reactive-react';
-import { WorkbenchTypes } from 'low-code-core';
+import { WorkbenchTypes } from '@astraflux/low-code-core';
 import { IconWidget } from '../IconWidget';
 import { usePrefix, useWorkbench } from '../../hooks';
 import cls from 'classnames';
@@ -131,6 +131,6 @@ export const TableToolsWidget: React.FC<ITableToolsWidget> = observer(
   }
 );
 
-TableToolsWidget.defaultProps = {
+(TableToolsWidget as any).defaultProps = {
   use: ['ADD', 'SAVE', 'DELETE', 'EDIT', 'PREVIEW'],
 };

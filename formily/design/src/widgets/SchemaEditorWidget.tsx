@@ -2,9 +2,9 @@ import React from 'react';
 import {
   transformToSchema,
   transformToTreeNode,
-} from 'low-code-formily-transformer';
-import { TreeNode, ITreeNode } from 'low-code-core';
-import { MonacoInput } from 'low-code-react-settings-form';
+} from '@astraflux/low-code-formily-transformer';
+import { TreeNode, ITreeNode } from '@astraflux/low-code-core';
+import { MonacoInput } from '@astraflux/low-code-react-settings-form';
 export interface ISchemaEditorWidgetProps {
   tree: TreeNode;
   onChange?: (tree: ITreeNode) => void;

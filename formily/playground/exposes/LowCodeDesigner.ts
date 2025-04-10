@@ -1,1 +1,1 @@
-export { LowCodeDesigner as default } from 'low-code-formily-design/esm/LowCodeDesigner';
+export { LowCodeDesigner as default } from '@astraflux/low-code-formily-design/esm/LowCodeDesigner';

@@ -1,5 +1,5 @@
-import React, { useContext } from 'react';
-import { usePrefix, IconWidget } from 'low-code-react';
+import React, { ReactNode, useContext } from 'react';
+import { usePrefix, IconWidget } from '@astraflux/low-code-react';
 import cls from 'classnames';
 import './styles.less';
 
@@ -26,7 +26,9 @@ export interface IInputItemProps {
 
 const InputItemsContext = React.createContext<IInputItemsContext>(null);
 
-export const InputItems: React.FC<IInputItemsProps> & {
+export const InputItems: React.FC<
+  IInputItemsProps
+> & {
   Item: React.FC<IInputItemProps>;
 } = (props) => {
   const prefix = usePrefix('input-items');
@@ -39,7 +41,7 @@ export const InputItems: React.FC<IInputItemsProps> & {
   );
 };
 
-InputItems.defaultProps = {
+(InputItems as any).defaultProps = {
   width: '100%',
 };
 

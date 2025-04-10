@@ -1,5 +1,5 @@
 import React from 'react';
-import { LocalLayoutWidget } from 'low-code-react';
+import { LocalLayoutWidget } from '@astraflux/low-code-react';
 import { LocalTemplateCatg } from '../type';
 
 export const LocalFormworkWidget: React.FunctionComponent<{

@@ -1,1 +1,1 @@
-# low-code-react-settings-form
+# @astraflux/low-code-react-settings-form

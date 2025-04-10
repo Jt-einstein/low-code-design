@@ -1,6 +1,6 @@
 import React from 'react';
 import { useField, observer } from '@formily/react';
-import { usePrefix, IconWidget } from 'low-code-react';
+import { usePrefix, IconWidget } from '@astraflux/low-code-react';
 import { FoldItem } from '../FoldItem';
 import { SizeInput } from '../SizeInput';
 import { InputItems } from '../InputItems';
@@ -50,13 +50,15 @@ export const BoxStyleSetter: React.FC<IMarginStyleSetterProps> = observer(
               value = '';
             }
             props.onChange?.(
-              `${value || '0px'} ${value || '0px'} ${value || '0px'} ${value || '0px'
+              `${value || '0px'} ${value || '0px'} ${value || '0px'} ${
+                value || '0px'
               }`
             );
           } else {
             matched[PositionMap[position]] = value;
             props.onChange?.(
-              `${matched[1] || '0px'} ${matched[2] || '0px'} ${matched[3] || '0px'
+              `${matched[1] || '0px'} ${matched[2] || '0px'} ${
+                matched[3] || '0px'
               } ${matched[4] || '0px'}`
             );
           }
@@ -105,7 +107,7 @@ export const BoxStyleSetter: React.FC<IMarginStyleSetterProps> = observer(
   }
 );
 
-BoxStyleSetter.defaultProps = {
+(BoxStyleSetter as any).defaultProps = {
   labels: [
     <IconWidget infer="Top" size={16} key="1" />,
     <IconWidget infer="Right" size={16} key="2" />,

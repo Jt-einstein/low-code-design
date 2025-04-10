@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { Space, Typography, Divider, TypographyProps } from 'antd';
 import { observer } from '@formily/reactive-react';
 import { usePrefix, useTreeNode, useSelected } from '../../hooks';
@@ -22,8 +22,10 @@ export interface INodeActionsWidgetActionProps
   icon?: React.ReactNode;
 }
 
-export const NodeActionsWidget: React.FC<INodeActionsWidgetProps> & {
-  Action?: React.FC<INodeActionsWidgetActionProps>;
+export const NodeActionsWidget: React.FC<
+  INodeActionsWidgetProps & { children?: ReactNode }
+> & {
+  Action?: React.FC<INodeActionsWidgetActionProps & { children?: ReactNode }>;
 } = observer((props) => {
   const node = useTreeNode();
   const prefix = usePrefix('node-actions');

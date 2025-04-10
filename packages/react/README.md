@@ -1,1 +1,1 @@
-# low-code-react
+# @astraflux/low-code-react

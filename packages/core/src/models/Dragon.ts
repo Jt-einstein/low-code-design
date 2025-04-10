@@ -7,7 +7,7 @@ import {
   isNearAfter,
   isPointInRect,
   IPoint,
-} from 'low-code-shared';
+} from '@astraflux/low-code-shared';
 import { DragNodeEvent, DropNodeEvent } from '../events';
 import { Viewport } from './Viewport';
 

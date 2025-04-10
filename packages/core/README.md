@@ -1,1 +1,1 @@
-# low-code-core
+# @astraflux/low-code-core

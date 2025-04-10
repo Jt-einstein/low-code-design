@@ -7,7 +7,7 @@ import {
   usePrefix,
 } from '../../hooks';
 import { observer } from '@formily/reactive-react';
-import { CursorStatus, ClosestPosition, TreeNode } from 'low-code-core';
+import { CursorStatus, ClosestPosition, TreeNode } from '@astraflux/low-code-core';
 import cls from 'classnames';
 interface ICoverRectProps {
   node: TreeNode;

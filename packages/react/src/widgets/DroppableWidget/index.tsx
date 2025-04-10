@@ -1,5 +1,5 @@
-import React from 'react';
-import { TreeNode } from 'low-code-core';
+import React, { ReactNode } from 'react';
+import { TreeNode } from '@astraflux/low-code-core';
 import { observer } from '@formily/reactive-react';
 import { useTreeNode, useNodeIdProps } from '../../hooks';
 import { NodeTitleWidget } from '../NodeTitleWidget';
@@ -61,6 +61,6 @@ export const DroppableWidget: React.FC<IDroppableWidgetProps> = observer(
   }
 );
 
-DroppableWidget.defaultProps = {
+(DroppableWidget as any).defaultProps = {
   placeholder: true,
 };

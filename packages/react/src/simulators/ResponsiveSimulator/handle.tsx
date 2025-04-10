@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { usePrefix } from '../../hooks';
 import cls from 'classnames';
 export enum ResizeHandleType {
@@ -11,7 +11,9 @@ export interface IResizeHandleProps {
   type?: ResizeHandleType;
 }
 
-export const ResizeHandle: React.FC<IResizeHandleProps> = (props) => {
+export const ResizeHandle: React.FC<
+  IResizeHandleProps
+> = (props) => {
   const prefix = usePrefix('resize-handle');
   return (
     <div

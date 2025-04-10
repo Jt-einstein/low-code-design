@@ -1,5 +1,5 @@
-import { each, isPlainObj } from 'low-code-shared';
-import { globalThisPolyfill } from 'low-code-shared';
+import { each, isPlainObj } from '@astraflux/low-code-shared';
+import { globalThisPolyfill } from '@astraflux/low-code-shared';
 
 export const lowerSnake = (str: string) => {
   return String(str).replace(/\s+/g, '_').toLocaleLowerCase();

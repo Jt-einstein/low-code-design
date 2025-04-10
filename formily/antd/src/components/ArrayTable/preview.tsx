@@ -1,13 +1,13 @@
 import React from 'react';
 import { Table, TableProps } from 'antd';
-import { TreeNode, createBehavior, createResource } from 'low-code-core';
+import { TreeNode, createBehavior, createResource } from '@astraflux/low-code-core';
 import {
   useTreeNode,
   TreeNodeWidget,
   DroppableWidget,
   useNodeIdProps,
   DnFC,
-} from 'low-code-react';
+} from '@astraflux/low-code-react';
 import { ArrayBase } from '@formily/antd';
 import { observer } from '@formily/react';
 import { LoadTemplate } from '../../common/LoadTemplate';
@@ -23,7 +23,7 @@ import { createArrayBehavior } from '../ArrayBase';
 import { VoidFieldSchema } from '../Field';
 import { AllSchemas } from '../../schemas';
 import { AllLocales } from '../../locales';
-import { antPrefix } from 'low-code-extension';
+import { antPrefix } from '@astraflux/low-code-extension';
 import './styles.less';
 import { TabletOutlined } from '@ant-design/icons';
 

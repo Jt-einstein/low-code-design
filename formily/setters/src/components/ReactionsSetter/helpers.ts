@@ -8,7 +8,7 @@ import {
   SELECTED_ROW,
   SELECTED_ROW_KEY,
   TRIGGER_QUERY,
-} from 'low-code-extension';
+} from '@astraflux/low-code-extension';
 
 function openSideCode(flag: boolean, operationType: EOperationType) {
   return `/* 打开抽屉 */

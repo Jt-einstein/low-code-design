@@ -33,7 +33,7 @@ export default merge(baseConfig, {
       exportFile: path.resolve(__dirname, '../design/src/index.ts'),
       generateDir: path.resolve(__dirname, './exposes'),
       transform: (libraryName: string) => {
-        return libraryName.replace('./', 'low-code-formily-design/esm/');
+        return libraryName.replace('./', '@mc/low-code-formily-design/esm/');
       },
     }),
     ...createModuleFederationPlugin(),
@@ -49,21 +49,14 @@ export default merge(baseConfig, {
     },
     hot: true,
     proxy: {
-      // '/baidubce': {
-      //   target: 'https://aip.baidubce.com',
-      //   changeOrigin: true, // 是否跨域
-      //   pathRewrite: (path) => path.replace(/^\/baidubce/, ''),
-      //   secure: false,
-      // },
-      '/localai': {
-        target: 'http://10.168.11.99:6006',
+      '/lcdp/api/': {
+        target: 'https://lcdp-service.dev.mananacare.cn',
         changeOrigin: true, // 是否跨域
         pathRewrite: (path) => {
           // console.log(path);
-          return path.replace(/^\/localai/, '');
+          return path.replace(/^\/lcdp\/api/, '');
         },
       },
-      // http://10.168.11.99:6006/prompt
     },
   },
 });

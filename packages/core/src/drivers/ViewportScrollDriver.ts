@@ -1,4 +1,4 @@
-import { EventDriver, globalThisPolyfill } from 'low-code-shared';
+import { EventDriver, globalThisPolyfill } from '@astraflux/low-code-shared';
 import { Engine } from '../models/Engine';
 import { ViewportScrollEvent } from '../events';
 

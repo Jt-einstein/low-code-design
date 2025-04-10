@@ -5,7 +5,7 @@ import {
   DragStopEvent,
   ViewportScrollEvent,
 } from '../events';
-import { Point } from 'low-code-shared';
+import { Point } from '@astraflux/low-code-shared';
 
 export const useDragDropEffect = (engine: Engine) => {
   engine.subscribeTo(DragStartEvent, (event) => {

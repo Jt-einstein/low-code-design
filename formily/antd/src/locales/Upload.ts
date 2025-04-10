@@ -1,4 +1,4 @@
-import { createLocales } from 'low-code-core';
+import { createLocales } from '@astraflux/low-code-core';
 
 export const Upload = {
   'zh-CN': {

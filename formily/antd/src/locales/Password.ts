@@ -1,4 +1,4 @@
-import { createLocales } from 'low-code-core';
+import { createLocales } from '@astraflux/low-code-core';
 import { Input } from './Input';
 
 export const Password = createLocales(Input, {

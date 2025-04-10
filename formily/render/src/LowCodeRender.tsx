@@ -2,17 +2,17 @@ import React, { useImperativeHandle, useMemo } from 'react';
 import { createForm } from '@formily/core';
 import { createSchemaField } from '@formily/react';
 import cls from 'classnames';
-import { utils, fns, mcPrefix, lcPrefix } from 'low-code-extension';
+import { utils, fns, mcPrefix, lcPrefix } from '@astraflux/low-code-extension';
 import moment from 'moment';
 import { message as $message } from 'antd';
-import { ECharts } from 'low-code-formily-antd';
+import { ECharts } from '@astraflux/low-code-formily-antd';
 import {
   Space,
   Div,
   ProgressBar,
   Repeat,
   Tooltip,
-} from 'low-code-formily-antd/esm/preview';
+} from '@astraflux/low-code-formily-antd/esm/preview';
 import {
   Form,
   DatePicker,
@@ -42,8 +42,8 @@ import {
 } from '@formily/antd';
 import { Card, Slider, Rate } from 'antd';
 import { Form as TForm } from '@formily/core';
-import { ErrorBoundary } from 'low-code-react';
-import { IFormilySchema } from 'low-code-formily-transformer';
+import { ErrorBoundary } from '@astraflux/low-code-react';
+import { IFormilySchema } from '@astraflux/low-code-formily-transformer';
 import Watermark, { WatermarkProps } from './components/Watermark';
 import './style/index.less';
 

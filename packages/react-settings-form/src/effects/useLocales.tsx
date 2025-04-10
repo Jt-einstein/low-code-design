@@ -1,8 +1,8 @@
 import React from 'react';
 import { isVoidField, onFieldReact } from '@formily/core';
-import { TreeNode, GlobalRegistry } from 'low-code-core';
-import { isStr } from 'low-code-shared';
-import { IconWidget } from 'low-code-react';
+import { TreeNode, GlobalRegistry } from '@astraflux/low-code-core';
+import { isStr } from '@astraflux/low-code-shared';
+import { IconWidget } from '@astraflux/low-code-react';
 
 const takeIcon = (message: string) => {
   if (!isStr(message)) return;

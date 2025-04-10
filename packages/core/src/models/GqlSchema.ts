@@ -1,5 +1,5 @@
 import { action, define } from '@formily/reactive';
-import { domains } from 'low-code-extension';
+import { domains } from '@astraflux/low-code-extension';
 import { gql } from '@apollo/client';
 
 export type TDomainSchema = {

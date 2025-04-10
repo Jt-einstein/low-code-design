@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { createBehavior, createResource } from 'low-code-core';
-import { DnFC } from 'low-code-react';
+import { createBehavior, createResource } from '@astraflux/low-code-core';
+import { DnFC } from '@astraflux/low-code-react';
 import { observer } from '@formily/reactive-react';
 import { echarts } from '../../common/BasicEChart';
-import { EchartsOptions, EchartsData, template } from 'low-code-extension';
+import { EchartsOptions, EchartsData, template } from '@astraflux/low-code-extension';
 import { TChartTypes } from '../../schemas/ECharts';
 import { Empty } from 'antd';
 

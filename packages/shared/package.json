@@ -1,6 +1,6 @@
 {
-  "name": "low-code-shared",
-  "version": "2.0.11-dev.1",
+  "name": "@astraflux/low-code-shared",
+  "version": "0.1.1-alpha.0",
   "license": "MIT",
   "main": "lib",
   "types": "lib/index.d.ts",
@@ -27,7 +27,8 @@
     "access": "public"
   },
   "dependencies": {
-    "requestidlecallback": "^0.3.0"
+    "requestidlecallback": "^0.3.0",
+    "user": "^0.0.0"
   },
   "gitHead": "210a0235103c47ae2df8ccace39f4520d453e07d"
 }

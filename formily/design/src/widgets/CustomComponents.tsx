@@ -1,4 +1,4 @@
-import { CompositePanel, DnFC, ResourceWidget } from 'low-code-react';
+import { CompositePanel, DnFC, ResourceWidget } from '@astraflux/low-code-react';
 import React from 'react';
 import { useContext } from 'react';
 import { TComponent } from '../type';

@@ -7,7 +7,7 @@ import * as hooks from './hooks';
 import * as containers from './containers';
 import * as simulators from './simulators';
 import * as types from './types';
-import { globalThisPolyfill } from 'low-code-shared';
+import { globalThisPolyfill } from '@astraflux/low-code-shared';
 
 export * from './panels';
 export * from './widgets';

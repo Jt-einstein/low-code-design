@@ -7,7 +7,7 @@ import {
   SwitchWorkspaceEvent,
 } from '../events';
 import { IEngineContext, WorkbenchTypes } from '../types';
-import { isStr } from 'low-code-shared';
+import { isStr } from '@astraflux/low-code-shared';
 export class Workbench {
   workspaces: Workspace[];
 

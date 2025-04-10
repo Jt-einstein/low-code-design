@@ -12,7 +12,7 @@ import {
   IPoint,
   isFn,
   requestIdle,
-} from 'low-code-shared';
+} from '@astraflux/low-code-shared';
 
 export interface IOperation {
   tree?: ITreeNode;

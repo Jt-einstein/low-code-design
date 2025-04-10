@@ -1,4 +1,4 @@
-import { createBehavior } from 'low-code-core';
+import { createBehavior } from '@astraflux/low-code-core';
 import { AllSchemas } from '../../schemas';
 import { AllLocales } from '../../locales';
 import { VoidFieldSchema } from '../Field';

@@ -4,7 +4,7 @@ import { Workbench } from './Workbench';
 import { Cursor } from './Cursor';
 import { Keyboard } from './Keyboard';
 import { Screen, ScreenType } from './Screen';
-import { Event, uid, globalThisPolyfill } from 'low-code-shared';
+import { Event, uid, globalThisPolyfill } from '@astraflux/low-code-shared';
 import { GqlSchema } from './GqlSchema';
 import { GlobalUtils } from './GlobalUtils';
 import { McConfig } from './McConfig';

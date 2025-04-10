@@ -32,9 +32,9 @@
     "release:github": "ts-node scripts/release release",
     "release:force": "lerna publish from-package --yes",
     "prelease:force": "lerna publish from-package --yes --dist-tag next",
-    "pub-dev": "git pull && yarn install && yarn iconfont && lerna publish prerelease --preid dev --dist-tag dev --registry http://npm.mananacare.cn",
-    "pub-prod": "git pull && yarn install && yarn iconfont && lerna publish --registry http://npm.mananacare.cn",
-    "prelease": "lerna publish --dist-tag dev --registry http://npm.mananacare.cn",
+    "pub-dev": "git pull && yarn install && yarn iconfont && lerna publish prerelease --preid dev --dist-tag dev --registry https://registry.npmjs.org/",
+    "pub-prod": "git pull && yarn install && yarn iconfont && lerna publish --registry https://registry.npmjs.org/",
+    "prelease": "lerna publish --dist-tag dev --registry https://registry.npmjs.org/",
     "lint": "eslint --ext .ts,.tsx,.js  --fix",
     "postinstall": "opencollective-postinstall",
     "tscheck:diff": "ts-node scripts/tsChecker",
@@ -45,8 +45,8 @@
     "modifyLernaGitConfig": "node scripts/modifyLernaGitConfig"
   },
   "resolutions": {
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
+    "@types/react": "17.0.80",
+    "@types/react-dom": "17.0.25",
     "yargs": "^16.x"
   },
   "devDependencies": {
@@ -63,8 +63,8 @@
     "@types/hoist-non-react-statics": "^3.3.1",
     "@types/jest": "^29.1.2",
     "@types/node": "^12.6.8",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
+    "@types/react": "17.0.80",
+    "@types/react-dom": "17.0.25",
     "@typescript-eslint/eslint-plugin": "^4.9.1",
     "@typescript-eslint/parser": "^4.8.2",
     "@umijs/test": "^3.5.34",

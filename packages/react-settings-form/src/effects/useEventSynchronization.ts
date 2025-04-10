@@ -2,7 +2,7 @@ import { onFieldInputValueChange, onFieldValueChange } from '@formily/core';
 import {
   getFnFromCodeString,
   getPropsFinishedIndex,
-} from 'low-code-extension';
+} from '@astraflux/low-code-extension';
 
 export const useEventSynchronization = () => {
   const handleEventSynchronization = ({ form }) => {

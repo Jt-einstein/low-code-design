@@ -4,8 +4,8 @@ import {
   isResourceList,
   IResourceLike,
   IResource,
-} from 'low-code-core';
-import { isFn } from 'low-code-shared';
+} from '@astraflux/low-code-core';
+import { isFn } from '@astraflux/low-code-shared';
 import { observer } from '@formily/reactive-react';
 import { usePrefix } from '../../hooks';
 import { IconWidget } from '../IconWidget';
@@ -13,7 +13,7 @@ import { TextWidget } from '../TextWidget';
 import cls from 'classnames';
 import './styles.less';
 
-export type SourceMapper = (resource: IResource) => React.ReactChild;
+export type SourceMapper = (resource: IResource) => React.ReactNode;
 
 export interface IResourceWidgetProps {
   title: React.ReactNode;
@@ -106,6 +106,6 @@ export const ResourceWidget: React.FC<IResourceWidgetProps> = observer(
   }
 );
 
-ResourceWidget.defaultProps = {
+(ResourceWidget as any).defaultProps = {
   defaultExpand: true,
 };

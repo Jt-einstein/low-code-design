@@ -1,10 +1,10 @@
 import React, { useMemo } from 'react';
-import { createBehavior, createResource } from 'low-code-core';
+import { createBehavior, createResource } from '@astraflux/low-code-core';
 import { createForm } from '@formily/core';
 import { observer } from '@formily/react';
 import { Form as FormilyForm } from '@formily/antd';
-import { usePrefix, DnFC } from 'low-code-react';
-import { mcPrefix } from 'low-code-extension';
+import { usePrefix, DnFC } from '@astraflux/low-code-react';
+import { mcPrefix } from '@astraflux/low-code-extension';
 import { AllSchemas } from '../../schemas';
 import { AllLocales } from '../../locales';
 import cls from 'classnames';

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { TreeNode } from 'low-code-core';
-import { requestIdle, cancelIdle } from 'low-code-shared';
+import { TreeNode } from '@astraflux/low-code-core';
+import { requestIdle, cancelIdle } from '@astraflux/low-code-shared';
 import { ResizeObserver } from '@juggle/resize-observer';
 import { useViewport } from './useViewport';
 

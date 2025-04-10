@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
-import { isResourceHost, isResourceList, IResource } from 'low-code-core';
-import { isFn } from 'low-code-shared';
+import {
+  isResourceHost,
+  isResourceList,
+  IResource,
+} from '@astraflux/low-code-core';
+import { isFn } from '@astraflux/low-code-shared';
 import { observer } from '@formily/reactive-react';
 import { usePrefix } from '../../hooks';
 import { IconWidget } from '../IconWidget';
@@ -94,6 +98,6 @@ export const LocalLayoutWidget: React.FC<ILocalLayoutWidgetProps> = observer(
   }
 );
 
-LocalLayoutWidget.defaultProps = {
+(LocalLayoutWidget as any).defaultProps = {
   defaultExpand: true,
 };

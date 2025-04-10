@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react';
 import { Card, CardProps } from 'antd';
-import { TreeNode, createResource } from 'low-code-core';
+import { TreeNode, createResource } from '@astraflux/low-code-core';
 import {
   useTreeNode,
   TreeNodeWidget,
   DroppableWidget,
   useNodeIdProps,
   DnFC,
-} from 'low-code-react';
+} from '@astraflux/low-code-react';
 import { ArrayBase } from '@formily/antd';
 import { observer } from '@formily/react';
 import { LoadTemplate } from '../../common/LoadTemplate';
@@ -21,7 +21,7 @@ import {
 } from '../../shared';
 import { createArrayBehavior } from '../ArrayBase';
 import cls from 'classnames';
-import { antPrefix } from 'low-code-extension';
+import { antPrefix } from '@astraflux/low-code-extension';
 import './styles.less';
 import { PlusOutlined } from '@ant-design/icons';
 

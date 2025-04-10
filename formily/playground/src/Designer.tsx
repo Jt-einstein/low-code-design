@@ -3,7 +3,7 @@ import {
   LowCodeDesigner,
   // withCenterLayout,
   hooks,
-} from 'low-code-formily-design';
+} from '@astraflux/low-code-formily-design';
 // import { Tabs } from 'antd';
 
 // const AntdTabs = withCenterLayout(Tabs);

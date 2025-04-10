@@ -1,4 +1,4 @@
-import { each } from 'low-code-shared';
+import { each } from '@astraflux/low-code-shared';
 import { Path } from '@formily/path';
 import { observable } from '@formily/reactive';
 import {

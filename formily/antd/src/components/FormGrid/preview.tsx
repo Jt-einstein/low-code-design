@@ -4,13 +4,13 @@ import {
   IFormGridProps,
   IGridColumnProps,
 } from '@formily/antd';
-import { createBehavior, createResource } from 'low-code-core';
+import { createBehavior, createResource } from '@astraflux/low-code-core';
 import {
   DnFC,
   useTreeNode,
   useNodeIdProps,
   DroppableWidget,
-} from 'low-code-react';
+} from '@astraflux/low-code-react';
 import { observer } from '@formily/reactive-react';
 import { VoidFieldSchema } from '../Field';
 import { AllSchemas } from '../../schemas';

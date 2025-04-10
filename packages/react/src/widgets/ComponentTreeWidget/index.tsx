@@ -2,7 +2,7 @@ import React, { Fragment, useEffect } from 'react';
 import { useTree, usePrefix, useDesigner, useComponents } from '../../hooks';
 import { TreeNodeContext, DesignerComponentsContext } from '../../context';
 import { IDesignerComponents } from '../../types';
-import { TreeNode, GlobalRegistry } from 'low-code-core';
+import { TreeNode, GlobalRegistry } from '@astraflux/low-code-core';
 import { observer } from '@formily/reactive-react';
 import cls from 'classnames';
 import './styles.less';
@@ -15,7 +15,7 @@ export interface IComponentTreeWidgetProps {
 
 export interface ITreeNodeWidgetProps {
   node: TreeNode;
-  children?: React.ReactChild;
+  children?: React.ReactNode;
 }
 
 export const TreeNodeWidget: React.FC<ITreeNodeWidgetProps> = observer(

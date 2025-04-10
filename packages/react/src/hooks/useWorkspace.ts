@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 import { useDesigner } from './useDesigner';
 import { WorkspaceContext } from '../context';
-import { Workspace } from 'low-code-core';
-import { globalThisPolyfill } from 'low-code-shared';
+import { Workspace } from '@astraflux/low-code-core';
+import { globalThisPolyfill } from '@astraflux/low-code-shared';
 
 export const useWorkspace = (id?: string): Workspace => {
   const designer = useDesigner();

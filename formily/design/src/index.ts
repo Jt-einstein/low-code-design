@@ -6,11 +6,11 @@ export type { TDesigner } from './type';
 export { TitleSetter } from './widgets/TitleSetter';
 /** 工具方法 */
 export { withCenterLayout, Formily } from './utils/utils';
-export { createBehavior, createResource } from 'low-code-core';
+export { createBehavior, createResource } from '@astraflux/low-code-core';
 export {
   transformToTreeNode,
   transformToSchema,
-} from 'low-code-formily-transformer';
+} from '@astraflux/low-code-formily-transformer';
 export * as schema from './utils/schema';
 export * as hooks from './hooks';
 

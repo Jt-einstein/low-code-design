@@ -1,7 +1,7 @@
 import * as schemas from './schemas';
 import * as locales from './locales';
 import * as components from './components';
-import { globalThisPolyfill } from 'low-code-shared';
+import { globalThisPolyfill } from '@astraflux/low-code-shared';
 import storage from './utils/storage';
 export * from './schemas';
 export * from './locales';

@@ -1,7 +1,8 @@
 import { observer } from '@formily/reactive-react';
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { useScreen, usePrefix, useTheme } from '../../hooks';
 
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface IMobileBodyProps {}
 
 const MockupImages = {
@@ -15,64 +16,65 @@ const MockupImages = {
   ],
 };
 
-export const MobileBody: React.FC<IMobileBodyProps> = observer((props) => {
-  const screen = useScreen();
-  const theme = useTheme();
-  const prefix = usePrefix('mobile-simulator-body');
-  const getContentStyles = (): React.CSSProperties => {
-    if (screen.flip) {
+export const MobileBody: React.FC<IMobileBodyProps> =
+  observer((props) => {
+    const screen = useScreen();
+    const theme = useTheme();
+    const prefix = usePrefix('mobile-simulator-body');
+    const getContentStyles = (): React.CSSProperties => {
+      if (screen.flip) {
+        return {
+          position: 'absolute',
+          width: 736,
+          height: 414,
+          top: 43.3333,
+          left: 106.667,
+          overflow: 'hidden',
+        };
+      }
       return {
         position: 'absolute',
-        width: 736,
-        height: 414,
-        top: 43.3333,
-        left: 106.667,
+        width: 414,
+        height: 736,
+        top: 126.667,
+        left: 23.3333,
         overflow: 'hidden',
       };
-    }
-    return {
-      position: 'absolute',
-      width: 414,
-      height: 736,
-      top: 126.667,
-      left: 23.3333,
-      overflow: 'hidden',
     };
-  };
 
-  return (
-    <div
-      className={prefix}
-      style={{
-        alignItems: screen.flip ? 'center' : '',
-        minWidth: screen.flip ? 1000 : 0,
-      }}
-    >
+    return (
       <div
-        className={prefix + '-wrapper'}
+        className={prefix}
         style={{
-          position: 'relative',
-          minHeight: screen.flip ? 0 : 1000,
+          alignItems: screen.flip ? 'center' : '',
+          minWidth: screen.flip ? 1000 : 0,
         }}
       >
-        <img
-          src={screen.flip ? MockupImages[theme][0] : MockupImages[theme][1]}
+        <div
+          className={prefix + '-wrapper'}
           style={{
-            display: 'block',
-            margin: '20px 0',
-            width: screen.flip ? 946.667 : 460,
-            height: screen.flip ? 460 : 946.667,
-            boxShadow: '0 0 20px #0000004d',
-            borderRadius: 60,
-            backfaceVisibility: 'hidden',
+            position: 'relative',
+            minHeight: screen.flip ? 0 : 1000,
           }}
-        ></img>
-        <div className={prefix + '-content'} style={getContentStyles()}>
-          {props.children}
+        >
+          <img
+            src={screen.flip ? MockupImages[theme][0] : MockupImages[theme][1]}
+            style={{
+              display: 'block',
+              margin: '20px 0',
+              width: screen.flip ? 946.667 : 460,
+              height: screen.flip ? 460 : 946.667,
+              boxShadow: '0 0 20px #0000004d',
+              borderRadius: 60,
+              backfaceVisibility: 'hidden',
+            }}
+          ></img>
+          <div className={prefix + '-content'} style={getContentStyles()}>
+            {props.children}
+          </div>
         </div>
       </div>
-    </div>
-  );
-});
+    );
+  });
 
-MobileBody.defaultProps = {};
+(MobileBody as any).defaultProps = {};

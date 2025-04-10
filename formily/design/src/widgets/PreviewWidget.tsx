@@ -1,6 +1,6 @@
 import React from 'react';
-import { LowCodeRender } from 'low-code-formily-render';
-import { Engine, TreeNode } from 'low-code-core';
+import { LowCodeRender } from '@astraflux/low-code-formily-render';
+import { Engine, TreeNode } from '@astraflux/low-code-core';
 import { getEngineSchema } from '../utils/schema';
 import { useCustomComponentsToPreviewContext } from './CustomComponents';
 

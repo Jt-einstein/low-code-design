@@ -1,4 +1,4 @@
-import { GlobalRegistry } from 'low-code-core';
+import { GlobalRegistry } from '@astraflux/low-code-core';
 import { ISchema } from '@formily/react';
 
 export const Slider: ISchema = {

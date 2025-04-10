@@ -1,4 +1,4 @@
-import { ICustomEvent } from 'low-code-shared';
+import { ICustomEvent } from '@astraflux/low-code-shared';
 import { AbstractViewportEvent } from './AbstractViewportEvent';
 
 export class ViewportResizeEvent

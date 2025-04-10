@@ -1,7 +1,7 @@
 import React from 'react';
-import { TreeNode } from 'low-code-core';
+import { TreeNode } from '@astraflux/low-code-core';
 import { Button } from 'antd';
-import { usePrefix } from 'low-code-react';
+import { usePrefix } from '@astraflux/low-code-react';
 import { Tooltip } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
 

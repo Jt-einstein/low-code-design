@@ -1,4 +1,4 @@
-import { globalThisPolyfill } from 'low-code-shared';
+import { globalThisPolyfill } from '@astraflux/low-code-shared';
 import './locales';
 import * as FormilySetters from './components';
 

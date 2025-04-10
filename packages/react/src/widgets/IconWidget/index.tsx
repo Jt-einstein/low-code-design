@@ -1,5 +1,11 @@
-import React, { createContext, useContext, useEffect, useRef } from 'react';
-import { isStr, isFn, isObj, isPlainObj } from 'low-code-shared';
+import React, {
+  createContext,
+  ReactNode,
+  useContext,
+  useEffect,
+  useRef,
+} from 'react';
+import { isStr, isFn, isObj, isPlainObj } from '@astraflux/low-code-shared';
 import { observer } from '@formily/reactive-react';
 import { Tooltip, TooltipProps } from 'antd';
 import { usePrefix, useRegistry, useTheme } from '../../hooks';
@@ -52,11 +58,11 @@ export const IconWidget: React.FC<IIconWidgetProps> & {
       });
     } else if (React.isValidElement(infer)) {
       if (infer.type === 'svg') {
-        return React.cloneElement(infer, {
-          height: height > MAX_ICON_SIZE ? MAX_ICON_SIZE : height,
-          width: width > MAX_ICON_SIZE ? MAX_ICON_SIZE : width,
+        return React.cloneElement(infer as any, {
+          height: +height > MAX_ICON_SIZE ? MAX_ICON_SIZE : height,
+          width: +width > MAX_ICON_SIZE ? MAX_ICON_SIZE : width,
           fill: 'currentColor',
-          viewBox: infer.props.viewBox || '0 0 1024 1024',
+          viewBox: (infer?.props as any)?.viewBox || '0 0 1024 1024',
           focusable: 'false',
           'aria-hidden': 'true',
         });
@@ -64,8 +70,8 @@ export const IconWidget: React.FC<IIconWidgetProps> & {
         return (
           <svg
             viewBox="0 0 1024 1024"
-            height={height > MAX_ICON_SIZE ? MAX_ICON_SIZE : height}
-            width={width > MAX_ICON_SIZE ? MAX_ICON_SIZE : width}
+            height={+height > MAX_ICON_SIZE ? MAX_ICON_SIZE : height}
+            width={+width > MAX_ICON_SIZE ? MAX_ICON_SIZE : width}
             fill="currentColor"
             focusable="false"
             aria-hidden="true"
@@ -123,13 +129,13 @@ export const IconWidget: React.FC<IIconWidgetProps> & {
         cursor: props.onClick ? 'pointer' : props.style?.cursor,
       }}
     >
-      {takeIcon(props.infer)}
+      {takeIcon(props.infer as React.ReactNode)}
     </span>
   );
 });
 
 IconWidget.ShadowSVG = (props) => {
-  const ref = useRef<HTMLDivElement>();
+  const ref = useRef<HTMLDivElement>(null);
   const width = isNumSize(props.width) ? `${props.width}px` : props.width;
   const height = isNumSize(props.height) ? `${props.height}px` : props.height;
   useEffect(() => {

@@ -1,1 +1,1 @@
-# low-code-shared
+# @astraflux/low-code-shared

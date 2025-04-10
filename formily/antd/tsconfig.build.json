@@ -4,7 +4,6 @@
     "outDir": "./lib",
     "paths": {
       "low-code-*": ["../../packages/*", "../../formily/*"]
-    },
-    "declaration": true
+    }
   }
 }

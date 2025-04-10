@@ -10,9 +10,9 @@ import {
 import { observer } from '@formily/reactive-react';
 import { OutlineTreeNode } from './OutlineNode';
 import { Insertion } from './Insertion';
-import { TreeNode, Viewport } from 'low-code-core';
+import { TreeNode, Viewport } from '@astraflux/low-code-core';
 import { NodeContext } from './context';
-import { globalThisPolyfill } from 'low-code-shared';
+import { globalThisPolyfill } from '@astraflux/low-code-shared';
 
 export interface IOutlineTreeWidgetProps {
   className?: string;
@@ -24,14 +24,14 @@ export interface IOutlineTreeWidgetProps {
 
 export const OutlineTreeWidget: React.FC<IOutlineTreeWidgetProps> = observer(
   ({ onClose, style, renderActions, renderTitle, className, ...props }) => {
-    const ref = useRef<HTMLDivElement>();
+    const ref = useRef<HTMLDivElement>(null);
     const prefix = usePrefix('outline-tree');
     const Designer = useDesigner();
     const currentWorkid = Designer.workbench.currentWorkspace.id;
 
     const tree = useTree(currentWorkid);
     const outline = useOutline(currentWorkid);
-    const outlineRef = useRef<Viewport>();
+    const outlineRef = useRef<Viewport>(null);
     useLayoutEffect(() => {
       if (!currentWorkid) return;
       if (outlineRef.current && outlineRef.current !== outline) {

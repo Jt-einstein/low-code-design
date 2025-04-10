@@ -5,7 +5,7 @@ import {
   isCrossRectInRect,
   isRectInRect,
   Point,
-} from 'low-code-shared';
+} from '@astraflux/low-code-shared';
 
 export const useFreeSelectionEffect = (engine: Engine) => {
   engine.subscribeTo(DragStopEvent, (event) => {

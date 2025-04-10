@@ -1,5 +1,5 @@
 import { getNpmCDNRegistry } from '../registry';
-import { globalThisPolyfill } from 'low-code-shared';
+import { globalThisPolyfill } from '@astraflux/low-code-shared';
 export interface ILoadScriptProps {
   package: string;
   entry: string;

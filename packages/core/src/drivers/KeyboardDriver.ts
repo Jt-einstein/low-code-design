@@ -1,4 +1,4 @@
-import { EventDriver } from 'low-code-shared';
+import { EventDriver } from '@astraflux/low-code-shared';
 import { KeyDownEvent, KeyUpEvent } from '../events';
 
 function filter(event: KeyboardEvent) {

@@ -1,6 +1,6 @@
 import * as Core from './exports';
 export * from './exports';
-import { globalThisPolyfill } from 'low-code-shared';
+import { globalThisPolyfill } from '@astraflux/low-code-shared';
 
 if (globalThisPolyfill?.['Designable']?.['Core']) {
   if (module.exports) {

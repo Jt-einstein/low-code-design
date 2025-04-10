@@ -1,1 +1,1 @@
-export { createResource as default } from 'low-code-core';
+export { createResource as default } from '@astraflux/low-code-core';

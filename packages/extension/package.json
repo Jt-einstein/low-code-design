@@ -1,6 +1,6 @@
 {
-  "name": "low-code-extension",
-  "version": "2.0.11-dev.1",
+  "name": "@astraflux/low-code-extension",
+  "version": "0.1.1-alpha.0",
   "license": "MIT",
   "main": "lib",
   "types": "lib/index.d.ts",

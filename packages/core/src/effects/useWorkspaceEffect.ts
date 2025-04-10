@@ -1,5 +1,5 @@
 import { Engine } from '../models';
-import { ICustomEvent } from 'low-code-shared';
+import { ICustomEvent } from '@astraflux/low-code-shared';
 import { IEngineContext } from '../types';
 import { SelectNodeEvent } from '../events';
 

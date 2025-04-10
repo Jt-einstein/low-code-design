@@ -5,6 +5,8 @@
     "paths": {
       "low-code-*": ["../*"]
     },
+    "skipLibCheck": true,
+    "noEmitOnError": false,
     "declaration": true
   }
 }

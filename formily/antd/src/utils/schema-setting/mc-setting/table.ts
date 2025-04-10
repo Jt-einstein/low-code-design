@@ -1,4 +1,4 @@
-import { ETableType } from 'low-code-extension';
+import { ETableType } from '@astraflux/low-code-extension';
 import { Field } from '@formily/core';
 export function tableSetting(fieldType?: ETableType) {
   const creatReaction = (field: Field) => {

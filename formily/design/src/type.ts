@@ -1,6 +1,6 @@
-import { Engine, IBehavior, IResource } from 'low-code-core';
-import { IFormilySchema } from 'low-code-formily-transformer';
-import type { ExtendForm } from 'low-code-react-settings-form';
+import { Engine, IBehavior, IResource } from '@astraflux/low-code-core';
+import { IFormilySchema } from '@astraflux/low-code-formily-transformer';
+import type { ExtendForm } from '@astraflux/low-code-react-settings-form';
 
 export type TDesigner = {
   getSchema: () => IFormilySchema;

@@ -2,7 +2,7 @@ import React, { useEffect, useMemo } from 'react';
 import { Form } from '@formily/antd';
 import * as formilyCore from '@formily/core';
 import * as formilyReact from '@formily/react';
-import { cancelIdle, requestIdle } from 'low-code-shared';
+import { cancelIdle, requestIdle } from '@astraflux/low-code-shared';
 import {
   IconWidget,
   NodePathWidget,
@@ -11,7 +11,7 @@ import {
   usePrefix,
   useSelected,
   useWorkbench,
-} from 'low-code-react';
+} from '@astraflux/low-code-react';
 import { SchemaField } from './SchemaField';
 import { ISettingFormProps } from './types';
 import { SettingsFormContext } from './shared/context';

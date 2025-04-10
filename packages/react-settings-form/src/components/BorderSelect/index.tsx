@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { usePrefix } from 'low-code-react';
+import { usePrefix } from '@astraflux/low-code-react';
 import { Select } from '@formily/antd';
 
 const BorderStyleOptions = [

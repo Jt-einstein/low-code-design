@@ -1,4 +1,4 @@
-import { TreeNode, Engine } from 'low-code-core';
+import { TreeNode, Engine } from '@astraflux/low-code-core';
 
 export type ComponentNameMatcher =
   | string

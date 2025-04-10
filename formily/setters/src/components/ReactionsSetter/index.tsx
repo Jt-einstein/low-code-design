@@ -2,11 +2,11 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { clone, uid } from '@formily/shared';
 import { createForm, Field, isVoidField, onFormMount } from '@formily/core';
 import { createSchemaField } from '@formily/react';
-import { GlobalRegistry } from 'low-code-core';
-import { utils } from 'low-code-extension';
-import { requestIdle } from 'low-code-shared';
-import { TextWidget, usePrefix } from 'low-code-react';
-import { MonacoInput } from 'low-code-react-settings-form';
+import { GlobalRegistry } from '@astraflux/low-code-core';
+import { utils } from '@astraflux/low-code-extension';
+import { requestIdle } from '@astraflux/low-code-shared';
+import { TextWidget, usePrefix } from '@astraflux/low-code-react';
+import { MonacoInput } from '@astraflux/low-code-react-settings-form';
 import {
   ArrayTable,
   Form,

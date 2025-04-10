@@ -1,9 +1,9 @@
 import React from 'react';
 import { Progress } from 'antd';
 import type { ProgressProps } from 'antd';
-import { DnFC } from 'low-code-react';
+import { DnFC } from '@astraflux/low-code-react';
 import { observer } from '@formily/reactive-react';
-import { createBehavior, createResource } from 'low-code-core';
+import { createBehavior, createResource } from '@astraflux/low-code-core';
 import { VoidFieldSchema } from '../../components/Field';
 import { AllLocales } from '../../locales';
 import { FormatPainterOutlined } from '@ant-design/icons';

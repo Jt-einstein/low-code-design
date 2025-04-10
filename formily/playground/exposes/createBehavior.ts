@@ -1,1 +1,1 @@
-export { createBehavior as default } from 'low-code-core';
+export { createBehavior as default } from '@astraflux/low-code-core';

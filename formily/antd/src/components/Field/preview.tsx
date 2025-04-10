@@ -12,14 +12,14 @@ import {
 } from '@formily/react';
 import { FormItem } from '@formily/antd';
 import { each, reduce } from '@formily/shared';
-import { createBehavior } from 'low-code-core';
+import { createBehavior } from '@astraflux/low-code-core';
 import {
   useDesigner,
   useTreeNode,
   useComponents,
   DnFC,
-} from 'low-code-react';
-import { isArr, isStr, deleteNullValueProperty } from 'low-code-shared';
+} from '@astraflux/low-code-react';
+import { isArr, isStr, deleteNullValueProperty } from '@astraflux/low-code-shared';
 import { Container } from '../../common/Container';
 import { AllLocales } from '../../locales';
 

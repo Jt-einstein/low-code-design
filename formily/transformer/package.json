@@ -1,6 +1,6 @@
 {
-  "name": "low-code-formily-transformer",
-  "version": "2.0.11-dev.1",
+  "name": "@astraflux/low-code-formily-transformer",
+  "version": "0.1.1-alpha.0",
   "license": "MIT",
   "main": "lib",
   "files": [
@@ -40,9 +40,9 @@
     "@formily/json-schema": "2.0.13"
   },
   "dependencies": {
-    "low-code-core": "2.0.11-dev.1",
-    "low-code-extension": "2.0.11-dev.1",
-    "low-code-shared": "2.0.11-dev.1"
+    "@astraflux/low-code-core": "0.1.1-alpha.0",
+    "@astraflux/low-code-extension": "0.1.1-alpha.0",
+    "@astraflux/low-code-shared": "0.1.1-alpha.0"
   },
   "gitHead": "210a0235103c47ae2df8ccace39f4520d453e07d"
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import { createBehavior, createResource } from 'low-code-core';
-import { DnFC } from 'low-code-react';
+import { createBehavior, createResource } from '@astraflux/low-code-core';
+import { DnFC } from '@astraflux/low-code-react';
 import { FieldSchema } from '../Field';
 import { Container } from '../../common/Container';
 import { AllLocales } from '../../locales';

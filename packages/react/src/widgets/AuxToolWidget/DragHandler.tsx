@@ -1,5 +1,5 @@
 import React from 'react';
-import { TreeNode } from 'low-code-core';
+import { TreeNode } from '@astraflux/low-code-core';
 import { observer } from '@formily/reactive-react';
 import { IconWidget } from '../IconWidget';
 import { useDesigner, usePrefix } from '../../hooks';

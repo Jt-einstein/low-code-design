@@ -1,4 +1,4 @@
-import { EOperationBtnType, ETableType } from 'low-code-extension';
+import { EOperationBtnType, ETableType } from '@astraflux/low-code-extension';
 
 export const Field = {
   'zh-CN': {

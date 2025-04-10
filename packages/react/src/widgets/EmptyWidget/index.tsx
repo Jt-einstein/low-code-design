@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { useTree, usePrefix } from '../../hooks';
 import { observer } from '@formily/reactive-react';
 import { IconWidget } from '../IconWidget';
@@ -8,7 +8,9 @@ export interface IEmptyWidgetProps {
   dragTipsDirection?: 'left' | 'right';
 }
 
-export const EmptyWidget: React.FC<IEmptyWidgetProps> = observer((props) => {
+export const EmptyWidget: React.FC<
+  IEmptyWidgetProps
+> = observer((props) => {
   const tree = useTree();
   const prefix = usePrefix('empty');
   const renderEmpty = () => {
@@ -52,6 +54,6 @@ export const EmptyWidget: React.FC<IEmptyWidgetProps> = observer((props) => {
   return null;
 });
 
-EmptyWidget.defaultProps = {
+(EmptyWidget as any).defaultProps = {
   dragTipsDirection: 'left',
 };

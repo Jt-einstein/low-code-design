@@ -1,5 +1,5 @@
 import React, { useRef, useState, useLayoutEffect } from 'react';
-import { TreeNode } from 'low-code-core';
+import { TreeNode } from '@astraflux/low-code-core';
 import { reaction } from '@formily/reactive';
 import cls from 'classnames';
 import { useDesigner, usePrefix, useViewport } from '../../hooks';
@@ -7,7 +7,7 @@ import { Selector } from './Selector';
 import { Copy } from './Copy';
 import { Delete } from './Delete';
 import { DragHandler } from './DragHandler';
-import { isFn } from 'low-code-shared';
+import { isFn } from '@astraflux/low-code-shared';
 
 const HELPER_DEBOUNCE_TIMEOUT = 100;
 
@@ -29,7 +29,7 @@ export const Helpers: React.FC<IHelpersProps> = ({ node, nodeRect }) => {
   const designer = useDesigner();
   const viewport = useViewport();
   const unmountRef = useRef(false);
-  const ref = useRef<HTMLDivElement>();
+  const ref = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState('top-right');
 
   useLayoutEffect(() => {
@@ -107,7 +107,7 @@ export const Helpers: React.FC<IHelpersProps> = ({ node, nodeRect }) => {
     >
       <div className={cls(prefix + '-content')}>
         <Selector node={node} />
-        {node?.customAction()}
+        <>{node?.customAction()}</>
         {node?.allowClone() === false ? null : <Copy node={node} />}
         {node?.allowDrag() === false ? null : <DragHandler node={node} />}
         {node?.allowDelete() === false ? null : <Delete node={node} />}

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { observer } from '@formily/reactive-react';
-import { TreeNode } from 'low-code-core';
+import { TreeNode } from '@astraflux/low-code-core';
 export interface INodeTitleWidgetProps {
   node: TreeNode;
 }

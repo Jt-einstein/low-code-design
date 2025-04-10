@@ -1,8 +1,8 @@
 import React from 'react';
 import { Layout, LayoutProps } from 'antd';
 import { observer } from '@formily/react';
-import { createBehavior, createResource } from 'low-code-core';
-import { DnFC, DroppableWidget } from 'low-code-react';
+import { createBehavior, createResource } from '@astraflux/low-code-core';
+import { DnFC, DroppableWidget } from '@astraflux/low-code-react';
 import { VoidFieldSchema } from '../Field';
 import { AllSchemas } from '../../schemas';
 import { AllLocales } from '../../locales';

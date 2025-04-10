@@ -1,4 +1,4 @@
-import { createResource } from 'low-code-core';
+import { createResource } from '@astraflux/low-code-core';
 import {
   ArrayCards,
   ArrayTable,
@@ -31,10 +31,10 @@ import {
   Tooltip,
   Repeat,
   ProgressBar,
-} from 'low-code-formily-antd';
-import { transformToTreeNode } from 'low-code-formily-transformer';
+} from '@astraflux/low-code-formily-antd';
+import { transformToTreeNode } from '@astraflux/low-code-formily-transformer';
 
-import { DnFC } from 'low-code-react';
+import { DnFC } from '@astraflux/low-code-react';
 
 /** 聚合左侧组件 */
 export const getRenderViewComponents = (): any => {

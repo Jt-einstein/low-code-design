@@ -1,17 +1,20 @@
-import React, { useEffect, useRef } from 'react';
-import { Engine, GlobalRegistry } from 'low-code-core';
+import { Engine, GlobalRegistry } from '@astraflux/low-code-core';
 import { DesignerEngineContext } from '../context';
 import { IDesignerProps } from '../types';
 import { GhostWidget } from '../widgets';
 import { useDesigner } from '../hooks';
 import { Layout } from './Layout';
 import * as icons from '../icons';
+import { ReactNode, useEffect, useRef } from 'react';
+import React from 'react';
 
 GlobalRegistry.registerDesignerIcons(icons);
 
-export const Designer: React.FC<IDesignerProps> = (props) => {
+export const Designer: React.FunctionComponent<
+  IDesignerProps
+> & { defaultProps: any } = (props) => {
   const engine = useDesigner();
-  const ref = useRef<Engine>();
+  const ref = useRef<Engine>(null);
   useEffect(() => {
     if (props.engine) {
       if (props.engine && ref.current) {

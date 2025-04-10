@@ -1,1 +1,1 @@
-export { TitleSetter as default } from 'low-code-formily-design/esm/widgets/TitleSetter';
+export { TitleSetter as default } from '@astraflux/low-code-formily-design/esm/widgets/TitleSetter';

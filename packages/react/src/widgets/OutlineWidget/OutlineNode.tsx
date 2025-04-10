@@ -4,8 +4,8 @@ import {
   ClosestPosition,
   CursorStatus,
   DragMoveEvent,
-} from 'low-code-core';
-import { isFn } from 'low-code-shared';
+} from '@astraflux/low-code-core';
+import { isFn } from '@astraflux/low-code-shared';
 import { autorun } from '@formily/reactive';
 import { observer } from '@formily/reactive-react';
 import {
@@ -20,7 +20,7 @@ import { NodeTitleWidget } from '../NodeTitleWidget';
 import { NodeContext } from './context';
 import cls from 'classnames';
 import './styles.less';
-import { COperationTypeName } from 'low-code-extension';
+import { COperationTypeName } from '@astraflux/low-code-extension';
 import { Dropdown, Input } from 'antd';
 
 export interface IOutlineTreeNodeProps {
@@ -34,7 +34,7 @@ export const OutlineTreeNode: React.FC<IOutlineTreeNodeProps> = observer(
   ({ node, className, style, workspaceId }) => {
     const prefix = usePrefix('outline-tree-node');
     const engine = useDesigner();
-    const ref = useRef<HTMLDivElement>();
+    const ref = useRef<HTMLDivElement>(null);
     const ctx = useContext(NodeContext);
     const request = useRef(null);
     const cursor = useCursor();

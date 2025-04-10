@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form } from '@formily/core';
 import { ISchema } from '@formily/react';
-import type { TreeNode } from 'low-code-core';
+import type { TreeNode } from '@astraflux/low-code-core';
 
 export type ExtendForm = {
   components?: Record<string, any>;

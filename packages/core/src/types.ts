@@ -1,4 +1,4 @@
-import { IEventProps, Event } from 'low-code-shared';
+import { IEventProps, Event } from '@astraflux/low-code-shared';
 import { ISchema } from '@formily/json-schema';
 import {
   Engine,

@@ -1,11 +1,11 @@
 import React, { useRef, useEffect } from 'react';
-import { isFn, globalThisPolyfill } from 'low-code-shared';
+import { isFn, globalThisPolyfill } from '@astraflux/low-code-shared';
 import {
   useDesigner,
   useWorkspace,
   useLayout,
   usePrefix,
-} from 'low-code-react';
+} from '@astraflux/low-code-react';
 import ReactDOM from 'react-dom';
 
 export interface ISandboxProps {
@@ -16,7 +16,7 @@ export interface ISandboxProps {
 }
 
 export const useSandbox = (props: React.PropsWithChildren<ISandboxProps>) => {
-  const ref = useRef<HTMLIFrameElement>();
+  const ref = useRef<HTMLIFrameElement>(null);
   const appCls = usePrefix('app');
   const designer = useDesigner();
   const workspace = useWorkspace();
@@ -97,7 +97,7 @@ export const useSandbox = (props: React.PropsWithChildren<ISandboxProps>) => {
 if (globalThisPolyfill.frameElement) {
   //解决iframe内嵌如果iframe被移除，内部React无法回收内存的问题
   globalThisPolyfill.addEventListener('unload', () => {
-    ReactDOM.unmountComponentAtNode(
+    (ReactDOM as any).unmountComponentAtNode(
       document.getElementById('__SANDBOX_ROOT__')
     );
   });
@@ -109,7 +109,7 @@ export const useSandboxScope = () => {
 
 export const renderSandboxContent = (render: (scope?: any) => JSX.Element) => {
   if (isFn(render)) {
-    ReactDOM.render(
+    (ReactDOM as any).render(
       render(useSandboxScope()),
       document.getElementById('__SANDBOX_ROOT__')
     );

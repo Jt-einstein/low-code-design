@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { ReactNode, useState } from 'react';
 import { useField, observer } from '@formily/react';
-import { usePrefix, IconWidget } from 'low-code-react';
+import { usePrefix, IconWidget } from '@astraflux/low-code-react';
 import cls from 'classnames';
 import './styles.less';
 
@@ -10,7 +10,9 @@ export interface ICollapseItemProps {
   defaultExpand?: boolean;
 }
 
-export const CollapseItem: React.FC<ICollapseItemProps> = observer((props) => {
+export const CollapseItem: React.FC<
+  ICollapseItemProps
+> = observer((props) => {
   const prefix = usePrefix('collapse-item');
   const field = useField();
   const [expand, setExpand] = useState(props.defaultExpand ?? true);

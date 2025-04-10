@@ -1,4 +1,4 @@
-import { Operation } from 'low-code-core';
+import { Operation } from '@astraflux/low-code-core';
 import { onFieldInputValueChange } from '@formily/core';
 
 let timeRequest = null;

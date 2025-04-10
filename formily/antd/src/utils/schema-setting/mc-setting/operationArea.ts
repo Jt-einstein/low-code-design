@@ -3,8 +3,8 @@
  * @Description: 操作区schema
  * @Date: 2022/04/14 20:11
  */
-import { ITreeNode } from 'low-code-core';
-import { EOperationType, template } from 'low-code-extension';
+import { ITreeNode } from '@astraflux/low-code-core';
+import { EOperationType, template } from '@astraflux/low-code-extension';
 
 const { genAdd, genEdit } = template;
 

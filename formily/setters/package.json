@@ -1,6 +1,6 @@
 {
-  "name": "low-code-setters",
-  "version": "2.0.11-dev.1",
+  "name": "@astraflux/low-code-formily-setters",
+  "version": "0.1.1-alpha.0",
   "license": "MIT",
   "main": "lib",
   "module": "esm",
@@ -23,7 +23,7 @@
     "npm": ">=3.0.0"
   },
   "scripts": {
-    "build": "rimraf -rf lib esm dist && npm run build:cjs && npm run build:esm && ts-node copy",
+    "build": "rimraf -rf lib esm dist && npm run build:cjs && npm run build:esm",
     "build:cjs": "tsc --project tsconfig.build.json",
     "build:esm": "tsc --project tsconfig.build.json --module es2015 --outDir esm",
     "tscheck": "tsc --project tsconfig.json --noEmit true"
@@ -44,19 +44,19 @@
     "@formily/reactive": "2.0.13",
     "@formily/reactive-react": "2.0.13",
     "@formily/shared": "2.0.13",
-    "@types/react": ">=16.8.0 || >=17.0.0",
-    "@types/react-dom": ">=16.8.0 || >=17.0.0",
+    "@types/react": "^17.0.80",
+    "@types/react-dom": "^17.0.25",
     "antd": "4.24.5",
     "react": ">=16.8.0 || >=17.0.0",
     "react-dom": ">=16.8.0",
     "react-is": ">=16.8.0 || >=17.0.0"
   },
   "dependencies": {
-    "low-code-core": "2.0.11-dev.1",
-    "low-code-extension": "2.0.11-dev.1",
-    "low-code-formily-transformer": "2.0.11-dev.1",
-    "low-code-react": "2.0.11-dev.1",
-    "low-code-react-settings-form": "2.0.11-dev.1"
+    "@astraflux/low-code-core": "0.1.1-alpha.0",
+    "@astraflux/low-code-extension": "0.1.1-alpha.0",
+    "@astraflux/low-code-formily-transformer": "0.1.1-alpha.0",
+    "@astraflux/low-code-react": "0.0.1",
+    "@astraflux/low-code-react-settings-form": "0.1.1-alpha.0"
   },
   "publishConfig": {
     "access": "public"

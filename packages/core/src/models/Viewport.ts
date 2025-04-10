@@ -7,7 +7,7 @@ import {
   requestIdle,
   cancelIdle,
   globalThisPolyfill,
-} from 'low-code-shared';
+} from '@astraflux/low-code-shared';
 import { action, define, observable } from '@formily/reactive';
 import { Workspace } from './Workspace';
 import { Engine } from './Engine';

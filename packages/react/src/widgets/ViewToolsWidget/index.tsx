@@ -1,11 +1,11 @@
 import React from 'react';
 import { observer } from '@formily/reactive-react';
-import { WorkbenchTypes } from 'low-code-core';
+import { WorkbenchTypes } from '@astraflux/low-code-core';
 import { IconWidget } from '../IconWidget';
 import { useWorkbench } from '../../hooks';
 import { Radio, Tooltip } from 'antd';
 import storage from '../../utils';
-import { utils } from 'low-code-extension';
+import { utils } from '@astraflux/low-code-extension';
 export interface IViewToolsWidget {
   use?: WorkbenchTypes[];
   style?: React.CSSProperties;
@@ -61,6 +61,6 @@ export const ViewToolsWidget: React.FC<IViewToolsWidget> = observer(
   }
 );
 
-ViewToolsWidget.defaultProps = {
+(ViewToolsWidget as any).defaultProps = {
   use: ['DESIGNABLE', 'CSSSTYLE', 'JSONTREE', 'MARKUP', 'PREVIEW', 'ONLINE'],
 };

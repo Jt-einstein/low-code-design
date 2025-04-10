@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePrefix } from 'low-code-react';
+import { usePrefix } from '@astraflux/low-code-react';
 import { useField, observer } from '@formily/react';
 import { FoldItem } from '../FoldItem';
 import { ColorInput } from '../ColorInput';

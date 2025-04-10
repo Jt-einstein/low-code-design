@@ -1,5 +1,5 @@
 import React from 'react';
-import { Engine, IResource, IBehavior } from 'low-code-core';
+import { Engine, IResource, IBehavior } from '@astraflux/low-code-core';
 export interface IDesignerLayoutProps {
   prefixCls?: string;
   theme?: 'dark' | 'light';

@@ -1,4 +1,4 @@
-import { createLocales } from 'low-code-core';
+import { createLocales } from '@astraflux/low-code-core';
 import { Card } from './Card';
 
 export const ArrayCards = createLocales(Card, {

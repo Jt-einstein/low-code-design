@@ -2,7 +2,6 @@ import baseConfig from './webpack.base';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import CompressionWebpackPlugin from 'compression-webpack-plugin';
 import merge from 'webpack-merge';
-import { createModuleFederationPlugin } from './webpack.common';
 
 export default merge(baseConfig, {
   mode: 'production',
@@ -19,7 +18,6 @@ export default merge(baseConfig, {
       chunkFilename: '[id].[contenthash].css',
       ignoreOrder: true,
     }),
-    ...createModuleFederationPlugin(),
   ],
   optimization: {
     minimize: true,

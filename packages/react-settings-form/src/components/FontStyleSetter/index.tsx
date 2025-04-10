@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePrefix, IconWidget } from 'low-code-react';
+import { usePrefix, IconWidget } from '@astraflux/low-code-react';
 import { useField, Field, observer } from '@formily/react';
 import { Select, Radio, NumberPicker } from '@formily/antd';
 import { FoldItem } from '../FoldItem';

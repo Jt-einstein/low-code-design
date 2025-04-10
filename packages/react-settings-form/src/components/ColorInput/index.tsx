@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Input, Popover } from 'antd';
-import { usePrefix } from 'low-code-react';
+import { usePrefix } from '@astraflux/low-code-react';
 import { SketchPicker } from 'react-color';
 import './styles.less';
 
@@ -11,7 +11,7 @@ export interface IColorInputProps {
 }
 
 export const ColorInput: React.FC<IColorInputProps> = (props) => {
-  const container = useRef<HTMLDivElement>();
+  const container = useRef<HTMLDivElement>(null);
   const prefix = usePrefix('color-input');
   const color = props.value as string;
   return (

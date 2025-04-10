@@ -6,7 +6,7 @@ import {
   IAutoScrollBasicInfo,
   IPoint,
   Point,
-} from 'low-code-shared';
+} from '@astraflux/low-code-shared';
 
 export const useAutoScrollEffect = (engine: Engine) => {
   let xScroller: IAutoScrollBasicInfo = null;

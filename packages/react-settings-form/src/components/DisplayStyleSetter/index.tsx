@@ -3,7 +3,7 @@ import { useField, Field, observer } from '@formily/react';
 import { Field as FieldType } from '@formily/core';
 import { FormItem } from '@formily/antd';
 import { Radio } from 'antd';
-import { usePrefix, IconWidget } from 'low-code-react';
+import { usePrefix, IconWidget } from '@astraflux/low-code-react';
 import { FlexStyleSetter } from '../FlexStyleSetter';
 import cls from 'classnames';
 import './styles.less';

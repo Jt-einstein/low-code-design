@@ -1,4 +1,4 @@
-import { ReactionsSetter } from 'low-code-setters';
+import { ReactionsSetter } from '@astraflux/low-code-formily-setters';
 import { ISchema } from '@formily/json-schema';
 import { AllSchemas } from '../../../schemas';
 

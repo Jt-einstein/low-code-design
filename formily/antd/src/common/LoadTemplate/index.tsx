@@ -1,5 +1,5 @@
 import React from 'react';
-import { NodeActionsWidget } from 'low-code-react';
+import { NodeActionsWidget } from '@astraflux/low-code-react';
 
 export interface ITemplateAction {
   title: React.ReactNode;

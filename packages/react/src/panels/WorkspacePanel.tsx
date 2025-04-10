@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { usePrefix } from '../hooks';
 
 export interface IWorkspaceItemProps {
@@ -6,7 +6,7 @@ export interface IWorkspaceItemProps {
   flexable?: boolean;
 }
 
-export const WorkspacePanel: React.FC & {
+export const WorkspacePanel: React.FC<{ children: ReactNode }> & {
   Item?: React.FC<IWorkspaceItemProps>;
 } = (props) => {
   const prefix = usePrefix('workspace-panel');

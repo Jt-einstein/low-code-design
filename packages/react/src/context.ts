@@ -1,5 +1,5 @@
 import { createContext } from 'react';
-import { TreeNode, Engine } from 'low-code-core';
+import { TreeNode, Engine } from '@astraflux/low-code-core';
 import {
   IDesignerLayoutContext,
   IWorkspaceContext,

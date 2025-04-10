@@ -1,4 +1,4 @@
-import { Engine, IWorkspaceProps } from 'low-code-core';
+import { Engine, IWorkspaceProps } from '@astraflux/low-code-core';
 import { useEffect } from 'react';
 
 export type TtabProps = {

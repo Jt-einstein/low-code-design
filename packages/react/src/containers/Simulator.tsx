@@ -1,6 +1,6 @@
 import React from 'react';
-import { ScreenType } from 'low-code-core';
-import { requestIdle } from 'low-code-shared';
+import { ScreenType } from '@astraflux/low-code-core';
+import { requestIdle } from '@astraflux/low-code-shared';
 import { observer } from '@formily/reactive-react';
 import { useScreen } from '../hooks';
 import {

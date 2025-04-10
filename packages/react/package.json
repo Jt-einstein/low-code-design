@@ -1,6 +1,6 @@
 {
-  "name": "low-code-react",
-  "version": "2.0.11-dev.1",
+  "name": "@astraflux/low-code-react",
+  "version": "0.1.1-alpha.0",
   "license": "MIT",
   "main": "lib",
   "types": "lib/index.d.ts",
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/alibaba/designable#readme",
   "scripts": {
-    "build": "rimraf -rf lib esm dist && npm run build:cjs && npm run build:esm && npm run build:umd && ts-node copy",
+    "build": "rimraf -rf lib esm dist && npm run build:cjs && npm run build:esm",
     "build:cjs": "tsc --project tsconfig.build.json",
     "build:esm": "tsc --project tsconfig.build.json --module es2015 --outDir esm",
     "build:umd": "rollup --config",
@@ -41,10 +41,12 @@
     "react": ">=16.8.0 || >=17.0.0"
   },
   "dependencies": {
+    "@astraflux/low-code-core": "0.1.1-alpha.0",
+    "@astraflux/low-code-extension": "0.1.1-alpha.0",
+    "@astraflux/low-code-shared": "0.1.1-alpha.0",
     "@juggle/resize-observer": "^3.3.1",
-    "low-code-core": "2.0.11-dev.1",
-    "low-code-extension": "2.0.11-dev.1",
-    "low-code-shared": "2.0.11-dev.1",
+    "@types/react": "^17.0.80",
+    "@types/react-dom": "^17.0.25",
     "dateformat": "^4.5.1"
   },
   "publishConfig": {

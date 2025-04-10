@@ -4,7 +4,7 @@ import { Modal, Button } from 'antd';
 import { Form } from '@formily/core';
 import { observable } from '@formily/reactive';
 import { observer } from '@formily/reactive-react';
-import { usePrefix, useTheme, TextWidget } from 'low-code-react';
+import { usePrefix, useTheme, TextWidget } from '@astraflux/low-code-react';
 import { DataSettingPanel } from './DataSettingPanel';
 import { TreePanel } from './TreePanel';
 import { transformDataToValue, transformValueToData } from './shared';

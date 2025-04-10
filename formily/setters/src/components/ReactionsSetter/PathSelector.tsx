@@ -1,8 +1,8 @@
 import React from 'react';
-import { IWorkspaceProps, TreeNode, } from 'low-code-core';
+import { IWorkspaceProps, TreeNode, } from '@astraflux/low-code-core';
 import { TreeSelectProps, TreeSelect } from 'antd';
-import { COperationTypeName } from 'low-code-extension';
-import { useDesigner } from 'low-code-react';
+import { COperationTypeName } from '@astraflux/low-code-extension';
+import { useDesigner } from '@astraflux/low-code-react';
 
 export type TworkProps = IWorkspaceProps & {
   istab?: boolean;

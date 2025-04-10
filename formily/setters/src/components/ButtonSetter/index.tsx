@@ -1,10 +1,10 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { createForm } from '@formily/core';
 import { createSchemaField } from '@formily/react';
-import { GlobalRegistry } from 'low-code-core';
-import { requestIdle } from 'low-code-shared';
-import { usePrefix, TextWidget } from 'low-code-react';
-import { MonacoInput } from 'low-code-react-settings-form';
+import { GlobalRegistry } from '@astraflux/low-code-core';
+import { requestIdle } from '@astraflux/low-code-shared';
+import { usePrefix, TextWidget } from '@astraflux/low-code-react';
+import { MonacoInput } from '@astraflux/low-code-react-settings-form';
 import { Form, FormCollapse } from '@formily/antd';
 import { Modal, Button } from 'antd';
 import { FuclickHelper } from './helpers';

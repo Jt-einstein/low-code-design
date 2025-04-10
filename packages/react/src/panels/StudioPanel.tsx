@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { ReactNode, useContext } from 'react';
 import { usePrefix, usePosition } from '../hooks';
 import { Layout } from '../containers';
 import cls from 'classnames';
@@ -12,11 +12,9 @@ export interface IStudioPanelProps {
   position?: React.ComponentProps<typeof Layout>['position'];
 }
 
-const StudioPanelInternal: React.FC<IStudioPanelProps> = ({
-  logo,
-  actions,
-  ...props
-}) => {
+const StudioPanelInternal: React.FC<
+  IStudioPanelProps & { children?: ReactNode }
+> = ({ logo, actions, ...props }) => {
   const prefix = usePrefix('main-panel');
   const position = usePosition();
   const classNameBase = cls(position, props.className);

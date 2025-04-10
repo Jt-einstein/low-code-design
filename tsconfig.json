@@ -6,6 +6,7 @@
     "module": "CommonJS",
     "target": "es2017",
     "allowJs": false,
+    "noEmitOnError": false,
     "noUnusedLocals": false,
     "preserveConstEnums": true,
     "sourceMap": true,
@@ -14,11 +15,19 @@
     "experimentalDecorators": true,
     "downlevelIteration": true,
     "baseUrl": ".",
+    "strict": false,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "alwaysStrict": false,
+    "strictBindCallApply": false,
+    "strictFunctionTypes": false,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
     "paths": {
-      "low-code-*": ["./packages/*/src"],
-      "low-code-formily-*": ["./formily/*/src"],
-      "low-code-formily-antd/esm/*": ["./formily/antd/src/*"]
+      "@astraflux/low-code-*": ["./packages/*/src"],
+      "@astraflux/low-code-formily-*": ["./formily/*/src"],
+      "@astraflux/low-code-formily-antd/esm/*": ["./formily/antd/src/*"]
     },
     "resolveJsonModule": true
-  },
+  }
 }

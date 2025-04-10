@@ -14,18 +14,14 @@ const getWorkspaceAlias = () => {
     workspaces.forEach((pattern) => {
       const { found } = new GlobSync(pattern, { cwd: basePath });
       found.forEach((name) => {
-        const file = path.resolve(basePath, name, './package.json');
-        try {
-          const pkg = fs.readJSONSync(file);
-          const filePath = path.resolve(basePath, name, './src');
-          results[`${pkg.name}$`] = filePath;
-          // 处理直接从打包后的包导出的组件
-          results[`${pkg.name}/esm`] = filePath;
-          results[`${pkg.name}/lib`] = filePath;
-          console.log(`【读取组件${file}成功】😀`);
-        } catch (e) {
-          console.log(`【读取组件${file}失败】😭`);
-        }
+        const pkg = fs.readJSONSync(
+          path.resolve(basePath, name, './package.json')
+        );
+        const filePath = path.resolve(basePath, name, './src');
+        results[`${pkg.name}$`] = filePath;
+        // 处理直接从打包后的包导出的组件
+        results[`${pkg.name}/esm`] = filePath;
+        results[`${pkg.name}/lib`] = filePath;
       });
     });
   }

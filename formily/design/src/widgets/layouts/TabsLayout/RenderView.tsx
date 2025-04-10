@@ -7,7 +7,7 @@ import {
   ViewToolsWidget,
   WorkspacePanel,
   ComponentTreeWidget,
-} from 'low-code-react';
+} from '@astraflux/low-code-react';
 import React from 'react';
 import { TRenderViewProps } from '../../../type';
 import {

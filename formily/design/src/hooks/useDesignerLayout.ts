@@ -1,7 +1,7 @@
 import { ISchema } from '@formily/json-schema';
 import { isFn } from '@formily/shared';
-import { createDesigner, KeyCode, Shortcut, Workspace } from 'low-code-core';
-import { transformToTreeNode } from 'low-code-formily-transformer';
+import { createDesigner, KeyCode, Shortcut, Workspace } from '@astraflux/low-code-core';
+import { transformToTreeNode } from '@astraflux/low-code-formily-transformer';
 import { useMemo } from 'react';
 import { EWorkbenchType } from '../const/enum';
 import { getEngineSchema, handleSplitSchema } from '../utils/schema';

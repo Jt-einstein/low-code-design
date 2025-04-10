@@ -1,9 +1,9 @@
 import React from 'react';
-import { TreeNode } from 'low-code-core';
-import { MonacoInput } from 'low-code-react-settings-form';
+import { TreeNode } from '@astraflux/low-code-core';
+import { MonacoInput } from '@astraflux/low-code-react-settings-form';
 import { isEmpty, isPlainObj } from '@formily/shared';
 import { IProps } from './PreviewWidget';
-import { getEngineTrees } from 'low-code-react-settings-form';
+import { getEngineTrees } from '@astraflux/low-code-react-settings-form';
 import { handleMergeTree } from '../utils/schema';
 
 export interface IMarkupSchemaWidgetProps {

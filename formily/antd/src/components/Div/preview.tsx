@@ -1,7 +1,7 @@
 import React from 'react';
 import { Space as FormilySpace } from '@formily/antd';
-import { createBehavior, createResource } from 'low-code-core';
-import { DnFC, DroppableWidget } from 'low-code-react';
+import { createBehavior, createResource } from '@astraflux/low-code-core';
+import { DnFC, DroppableWidget } from '@astraflux/low-code-react';
 import { AllLocales } from '../../locales';
 import { observer } from '@formily/react';
 import { VoidFieldSchema } from '../../components';

@@ -1,4 +1,4 @@
-import { getKeyCodeFromEvent, KeyCode } from 'low-code-shared';
+import { getKeyCodeFromEvent, KeyCode } from '@astraflux/low-code-shared';
 import { IEngineContext } from '../../types';
 
 export class AbstractKeyboardEvent {

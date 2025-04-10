@@ -1,4 +1,4 @@
-import { EventDriver } from 'low-code-shared';
+import { EventDriver } from '@astraflux/low-code-shared';
 import { Engine } from '../models/Engine';
 import { MouseClickEvent, MouseDoubleClickEvent } from '../events';
 

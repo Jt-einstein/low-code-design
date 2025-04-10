@@ -5,9 +5,9 @@
  */
 import React from 'react';
 import { observer } from '@formily/react';
-import { useCurrentNode, useWorkbench } from 'low-code-react';
+import { useCurrentNode, useWorkbench } from '@astraflux/low-code-react';
 import { Select } from 'antd';
-import { ENodeType } from 'low-code-extension';
+import { ENodeType } from '@astraflux/low-code-extension';
 const { Option } = Select;
 
 /** 组件参数 */

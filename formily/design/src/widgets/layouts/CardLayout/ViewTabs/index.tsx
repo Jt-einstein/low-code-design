@@ -5,7 +5,7 @@ import {
   ViewportPanel,
   WorkspacePanel,
   ComponentTreeWidget,
-} from 'low-code-react';
+} from '@astraflux/low-code-react';
 import { Popover, Tabs } from 'antd';
 import { observer } from '@formily/reactive-react';
 import DesignerContainer from '../../../DesignerContainer';
@@ -18,7 +18,7 @@ import { EWorkbenchType } from '../../../../const/enum';
 import { EditText } from '../../../EditText';
 import { useTabs } from '../../../../hooks';
 import { getRenderViewComponents } from '../../../../const/components';
-import { lcPrefix } from 'low-code-extension';
+import { lcPrefix } from '@astraflux/low-code-extension';
 import { useCustomComponentsToDesignContext } from '../../../CustomComponents';
 import './styles.less';
 import { LockOutlined, PlusOutlined } from '@ant-design/icons';

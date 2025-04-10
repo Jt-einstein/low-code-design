@@ -1,7 +1,7 @@
 import React from 'react';
 import { Rate as AntdRate } from 'antd';
-import { createBehavior, createResource } from 'low-code-core';
-import { DnFC } from 'low-code-react';
+import { createBehavior, createResource } from '@astraflux/low-code-core';
+import { DnFC } from '@astraflux/low-code-react';
 import { FieldSchema } from '../Field';
 import { AllSchemas } from '../../schemas';
 import { AllLocales } from '../../locales';

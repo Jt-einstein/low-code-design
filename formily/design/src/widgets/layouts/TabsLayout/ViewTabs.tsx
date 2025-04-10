@@ -5,7 +5,7 @@ import { useTabs } from '../../../hooks';
 import { RenderView } from './RenderView';
 import { TViewTabsProps } from '../../../type';
 import { observer } from '@formily/reactive-react';
-import { lcPrefix } from 'low-code-extension';
+import { lcPrefix } from '@astraflux/low-code-extension';
 import { Popover, Tabs } from 'antd';
 import './styles.less';
 import { LockOutlined, PlusOutlined } from '@ant-design/icons';

@@ -1,7 +1,7 @@
 import { Engine, CursorType } from '../models';
 import { DragStartEvent, DragMoveEvent, DragStopEvent } from '../events';
 import { TreeNode } from '../models';
-import { Point } from 'low-code-shared';
+import { Point } from '@astraflux/low-code-shared';
 
 type Tdireation = 'x-start' | 'x-end' | 'y-start' | 'y-end'
 

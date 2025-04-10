@@ -1,4 +1,4 @@
-import { TreeNode } from 'low-code-core';
+import { TreeNode } from '@astraflux/low-code-core';
 import React, { createContext } from 'react';
 
 interface INodeContext {

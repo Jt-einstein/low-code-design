@@ -1,8 +1,8 @@
-import React, { Fragment, useState, useLayoutEffect } from 'react';
+import React, { Fragment, useState, useLayoutEffect, ReactNode } from 'react';
 import { createPortal } from 'react-dom';
 import { observer, useField } from '@formily/react';
 import { FormLayout } from '@formily/antd';
-import { IconWidget, usePrefix, useTreeNode } from 'low-code-react';
+import { IconWidget, usePrefix, useTreeNode } from '@astraflux/low-code-react';
 import { Button, ButtonProps } from 'antd';
 import cls from 'classnames';
 import './styles.less';
@@ -75,11 +75,11 @@ export const DrawerSetter: React.FC<IDrawerSetterProps> = observer((props) => {
   };
 
   return (
-    <Fragment>
+    <>
       <Button block onClick={handleOpen} {...props.triggerProps}>
         {props.text || field.title}
       </Button>
       {renderDrawer()}
-    </Fragment>
+    </>
   );
 });

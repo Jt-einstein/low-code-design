@@ -1,1 +1,1 @@
-# low-code-react-sandbox
+# @astraflux/low-code-react-sandbox

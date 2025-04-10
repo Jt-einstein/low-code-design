@@ -1,4 +1,4 @@
-import { Engine, TreeNode } from 'low-code-core';
+import { Engine, TreeNode } from '@astraflux/low-code-core';
 
 export const getEngineTrees = (engine: Engine) => {
   return (engine?.workbench?.workspaces ?? []).map((workspace) => {

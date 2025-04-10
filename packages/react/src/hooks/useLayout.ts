@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { DesignerLayoutContext } from '../context';
 import { IDesignerLayoutContext } from '../types';
-import { globalThisPolyfill } from 'low-code-shared';
+import { globalThisPolyfill } from '@astraflux/low-code-shared';
 
 export const useLayout = (): IDesignerLayoutContext => {
   return (

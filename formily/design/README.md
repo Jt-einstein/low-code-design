@@ -1,7 +1,7 @@
-# low-code-formily-design
+# @astraflux/low-code-formily-design
 
 ### Install
 
 ```bash
-npm install --save low-code-formily-design
+npm install --save @astraflux/low-code-formily-design
 ```

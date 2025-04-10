@@ -1,6 +1,6 @@
 import React, { Fragment, useRef } from 'react';
 import { observer } from '@formily/reactive-react';
-import { CursorType, ScreenType } from 'low-code-core';
+import { CursorType, ScreenType } from '@astraflux/low-code-core';
 import {
   useCursor,
   useHistory,
@@ -175,6 +175,6 @@ export const DesignerToolsWidget: React.FC<IDesignerToolsWidgetProps> =
     );
   });
 
-DesignerToolsWidget.defaultProps = {
+(DesignerToolsWidget as any).defaultProps = {
   use: ['HISTORY', 'CURSOR', 'SCREEN_TYPE'],
 };

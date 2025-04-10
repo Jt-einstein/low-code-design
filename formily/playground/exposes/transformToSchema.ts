@@ -1,1 +1,1 @@
-export { transformToSchema as default } from 'low-code-formily-transformer';
+export { transformToSchema as default } from '@astraflux/low-code-formily-transformer';

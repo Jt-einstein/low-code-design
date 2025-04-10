@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { usePrefix } from 'low-code-react';
+import { usePrefix } from '@astraflux/low-code-react';
 import cls from 'classnames';
 import './styles.less';
 

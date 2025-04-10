@@ -1,4 +1,4 @@
-import React, { useMemo, useRef, Fragment } from 'react';
+import React, { useMemo, useRef, Fragment, ReactNode } from 'react';
 import { useDesigner } from '../hooks';
 import { WorkspaceContext } from '../context';
 
@@ -8,13 +8,10 @@ export interface IWorkspaceProps {
   description?: string;
 }
 
-export const Workspace: React.FC<IWorkspaceProps> = ({
-  id,
-  title,
-  description,
-  ...props
-}) => {
-  const oldId = useRef<string>();
+export const Workspace: React.FC<
+  IWorkspaceProps & { children?: ReactNode }
+> = ({ id, title, description, ...props }) => {
+  const oldId = useRef<string>(null);
   const designer = useDesigner();
   const workspace = useMemo(() => {
     if (!designer) return;

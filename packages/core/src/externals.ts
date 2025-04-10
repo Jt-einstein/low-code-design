@@ -1,4 +1,4 @@
-import { isFn, isArr } from 'low-code-shared';
+import { isFn, isArr } from '@astraflux/low-code-shared';
 import { untracked } from '@formily/reactive';
 import { DEFAULT_DRIVERS, DEFAULT_EFFECTS, DEFAULT_SHORTCUTS } from './presets';
 import { Engine, TreeNode } from './models';
@@ -13,7 +13,7 @@ import {
   IResourceHost,
 } from './types';
 import { mergeLocales } from './internals';
-import { getFnFromCodeString } from 'low-code-extension';
+import { getFnFromCodeString } from '@astraflux/low-code-extension';
 
 export const isBehaviorHost = (val: any): val is IBehaviorHost =>
   val?.Behavior && isBehaviorList(val.Behavior);

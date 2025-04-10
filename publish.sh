@@ -2,10 +2,10 @@
 LOG_FILE="publish.log"
 if [ $1 = "dev" ];then
   echo "publish dev"
-  lerna publish prerelease --preid dev --dist-tag dev --registry http://npm.mananacare.cn --y > $LOG_FILE
+  lerna publish prerelease --preid dev --dist-tag dev --y > $LOG_FILE
 else
   echo "publish prod"
-  lerna publish patch --preid latest --dist-tag latest --registry http://npm.mananacare.cn --y > $LOG_FILE
+  lerna publish patch --preid latest --dist-tag latest --y > $LOG_FILE
 fi
 
 cat publish.log

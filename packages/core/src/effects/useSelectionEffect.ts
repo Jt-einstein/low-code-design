@@ -1,6 +1,6 @@
 import { Engine, CursorStatus } from '../models';
 import { MouseClickEvent } from '../events';
-import { KeyCode, Point } from 'low-code-shared';
+import { KeyCode, Point } from '@astraflux/low-code-shared';
 
 export const useSelectionEffect = (engine: Engine) => {
   engine.subscribeTo(MouseClickEvent, (event) => {

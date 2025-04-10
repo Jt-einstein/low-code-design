@@ -1,1 +1,1 @@
-export { transformToTreeNode as default } from 'low-code-formily-transformer';
+export { transformToTreeNode as default } from '@astraflux/low-code-formily-transformer';

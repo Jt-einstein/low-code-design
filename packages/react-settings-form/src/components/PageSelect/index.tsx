@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Select } from 'antd';
-import { useDesigner } from 'low-code-react';
+import { useDesigner } from '@astraflux/low-code-react';
 import { observer } from '@formily/react';
-import { EOperationBtnType } from 'low-code-extension';
+import { EOperationBtnType } from '@astraflux/low-code-extension';
 import { getEngineTrees } from '../../utils';
-import { TreeNode } from 'low-code-core';
+import { TreeNode } from '@astraflux/low-code-core';
 export interface IProps {
   value?: string;
   actionType: string;

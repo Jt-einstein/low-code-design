@@ -1,10 +1,10 @@
-import { Engine, TreeNode } from 'low-code-core';
+import { Engine, TreeNode } from '@astraflux/low-code-core';
 import {
   IFormilySchema,
   transformToSchema,
-} from 'low-code-formily-transformer';
+} from '@astraflux/low-code-formily-transformer';
 import { message } from 'antd';
-import { getEngineTrees as getEngine } from 'low-code-react-settings-form';
+import { getEngineTrees as getEngine } from '@astraflux/low-code-react-settings-form';
 
 const DEFAULT_WORKSPACE_ID = 'main';
 const DEFAULT_WORKSPACE_NAME = '主页面';

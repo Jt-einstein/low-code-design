@@ -1,5 +1,5 @@
 import { IEngineContext } from '../../types';
-import { globalThisPolyfill } from 'low-code-shared';
+import { globalThisPolyfill } from '@astraflux/low-code-shared';
 
 export interface ICursorEventOriginData {
   clientX: number;
